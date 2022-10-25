@@ -1,0 +1,22 @@
+.form-container {
+    display: flex;
+    justify-content:center;
+}
+
+.search-selection {
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.search-box {
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.sort-selection {
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+}
