@@ -5,8 +5,8 @@ import "./Login.css"
 export const Register = (props) => {
     const [user, setUser] = useState({
         email: "",
-        fullName: "",
-        isEmployee: false
+        name: "",
+        admin: false
     })
     let navigate = useNavigate()
 
@@ -23,7 +23,7 @@ export const Register = (props) => {
                 if (createdUser.hasOwnProperty("id")) {
                     localStorage.setItem("melomania_user", JSON.stringify({
                         id: createdUser.id,
-                        isEmployee: createdUser.isEmployee
+                        admin: createdUser.admin
                     }))
 
                     navigate("/")
@@ -37,11 +37,9 @@ export const Register = (props) => {
             .then(res => res.json())
             .then(response => {
                 if (response.length > 0) {
-                    // Duplicate email. No good.
                     window.alert("Account with that email address already exists")
                 }
                 else {
-                    // Good email, create user.
                     registerNewUser()
                 }
             })
@@ -56,11 +54,11 @@ export const Register = (props) => {
     return (
         <main style={{ textAlign: "center" }}>
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for Kandy Korner</h1>
+                <h1 className="h3 mb-3 font-weight-normal">Please Register for Melomania</h1>
                 <fieldset>
-                    <label htmlFor="fullName"> Full Name </label>
+                    <label htmlFor="name"> Full Name </label>
                     <input onChange={updateUser}
-                           type="text" id="fullName" className="form-control"
+                           type="text" id="name" className="form-control"
                            placeholder="Enter your name" required autoFocus />
                 </fieldset>
                 <fieldset>
@@ -72,10 +70,10 @@ export const Register = (props) => {
                 <fieldset>
                     <input onChange={(evt) => {
                         const copy = {...user}
-                        copy.isStaff = evt.target.checked
+                        copy.admin = evt.target.checked
                         setUser(copy)
                     }}
-                        type="checkbox" id="isStaff" />
+                        type="checkbox" id="admin" />
                     <label htmlFor="email"> I am an employee </label>
                 </fieldset>
                 <fieldset>

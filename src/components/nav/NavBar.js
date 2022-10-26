@@ -11,7 +11,7 @@ export const NavBar = () => {
                     Your Collection</Link>
             </li>
             <li className="navbar__item navbar__albumform">
-                <Link className="navbar__link" to="/albumform">
+                <Link className="navbar__link" to="/add">
                     Add An Album</Link>
             </li>
             <li className="navbar__item navbar__users">

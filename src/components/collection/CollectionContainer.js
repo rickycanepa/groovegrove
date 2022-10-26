@@ -6,8 +6,6 @@ export const CollectionContainer = () => {
     const [searchTerms, setSearchTerms] = useState("")
 
 
-
-
     
     return (
         <>
