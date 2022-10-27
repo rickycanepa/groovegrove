@@ -3,18 +3,18 @@ import { useNavigate } from "react-router-dom"
 import "./Collection.css"
 
 export const AddAlbumForm = () => {
+    const localMelomaniaUser = localStorage.getItem("melomania_user")
+    const melomaniaUserObject = JSON.parse(localMelomaniaUser)
+    const navigate = useNavigate()
+    
     const [album, updateAlbum] = useState({
         title: "",
         artist: "",
         year: "",
         coverArt: "",
-        notes: ""
+        notes: "",
+        userId: melomaniaUserObject.id
     })
-
-    const navigate = useNavigate()
-
-    const localMelomaniaUser = localStorage.getItem("melomania_user")
-    const melomaniaUserObject = JSON.parse(localMelomaniaUser)
 
     const handleSaveButtonClick = (event) => {
         event.preventDefault()
@@ -23,7 +23,8 @@ export const AddAlbumForm = () => {
             artist: album.artist,
             year: album.year,
             coverArt: album.coverArt,
-            notes: album.notes
+            notes: album.notes,
+            userId: melomaniaUserObject.id
         }
 
         return fetch('http://localhost:8088/albums', {

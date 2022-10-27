@@ -1,46 +1,72 @@
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useState, useEffect } from "react"
+import { useNavigate, useParams } from "react-router-dom"
 import "./Collection.css"
 
 export const AlbumEdit = () => {
+    const { albumId } = useParams()
+    const localMelomaniaUser = localStorage.getItem("melomania_user")
+    const melomaniaUserObject = JSON.parse(localMelomaniaUser)
+    const [feedback, setFeedback] = useState("")
+    const navigate = useNavigate()
+
     const [album, updateAlbum] = useState({
         title: "",
         artist: "",
         year: "",
         coverArt: "",
-        notes: ""
+        notes: "",
+        userId: melomaniaUserObject.id
     })
 
-    const navigate = useNavigate()
-
-    const localMelomaniaUser = localStorage.getItem("melomania_user")
-    const melomaniaUserObject = JSON.parse(localMelomaniaUser)
+    const deleteAlbum = () => {
+        const confirmation = window.confirm("Are you sure you want to delete this album?")
+        if (confirmation) {
+            return fetch(`http://localhost:8088/albums/${album.id}`,
+            { method: "DELETE" })
+            .then(navigate("/collection"))
+        }}
+    
+    useEffect(
+        () => {
+            fetch(`http://localhost:8088/albums?id=${albumId}`)
+            .then(res => res.json())
+            .then((data) => {
+                const singleAlbum = data[0]
+                updateAlbum(singleAlbum)})
+            }, []
+            
+            )
+            
+    useEffect(() => {
+    if (feedback !== "") {
+        // Clear feedback to make entire element disappear after 3 seconds
+        setTimeout(() => setFeedback(""), 3000);
+    }}, [feedback])
 
     const handleSaveButtonClick = (event) => {
         event.preventDefault()
-        const dataToSendToAPI = {
-            title: album.title,
-            artist: album.artist,
-            year: album.year,
-            coverArt: album.coverArt,
-            notes: album.notes
-        }
 
-        return fetch('http://localhost:8088/albums', {
-            method: "POST",
+        return fetch(`http://localhost:8088/albums/${album.id}`, {
+            method: "PUT",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(dataToSendToAPI)
+            body: JSON.stringify(album)
         })
         .then(response => response.json())
         .then(() => {
+            setFeedback("Employee profile successfully saved")
+        })
+        .then(() => {
             navigate("/collection")
         })
-
     }
 
     return (
+    <>
+        <div className={`${feedback.includes("Error") ? "error" : "feedback"} ${feedback === "" ? "invisible" : "visible"}`}>
+            {feedback}
+        </div>
         <form className="albumForm">
             <h2 className="albumForm-title">Edit an Album in your Collection</h2>
             <fieldset>
@@ -139,12 +165,14 @@ export const AlbumEdit = () => {
                 className="edit-button">
                     Submit Album Changes
                 </button>
-                <button 
-
+                <button
+                type="button"
+                onClick={() => deleteAlbum()}
                 className="delete-button">
                     Delete
                 </button>
             </div>
         </form>
+    </>
     )
 }

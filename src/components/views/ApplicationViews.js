@@ -14,7 +14,7 @@ export const ApplicationViews = () => {
                 </>
         }>
             <Route index path="collection" element={< CollectionContainer />} />
-            <Route path="edit" element={< AlbumEdit />} />
+            <Route path="edit/:albumId" element={< AlbumEdit />} />
             <Route path="add" element={< AddAlbumForm />} />
             <Route path="users" element={< UsersList />} />
             <Route path="users/:userId" element={ < UserDetails /> } />

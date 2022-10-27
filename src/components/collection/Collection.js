@@ -5,11 +5,15 @@ import "./Collection.css"
 export const Collection = ({ searchTermState }) => {
     const [collection, setCollection] = useState([])
     const [filteredAlbums, setFilteredAlbums] = useState([])
+
+    const localMelomaniaUser = localStorage.getItem("melomania_user")
+    const melomaniaUserObject = JSON.parse(localMelomaniaUser)
+
     const navigate = useNavigate()
     
     useEffect(
         () => {
-            fetch('http://localhost:8088/albums?_sort=artist')
+            fetch(`http://localhost:8088/albums?userId=${melomaniaUserObject.id}`)
             .then(res => res.json())
             .then((collectionData) => {setCollection(collectionData)})
         }
@@ -59,7 +63,7 @@ export const Collection = ({ searchTermState }) => {
                             </ul>
                         </div>
                         <button 
-                            onClick={() => navigate("/edit")}
+                            onClick={() => navigate(`/edit/${album.id}`)}
                             className="edit-delete-button">
                             Edit/Delete
                         </button>
