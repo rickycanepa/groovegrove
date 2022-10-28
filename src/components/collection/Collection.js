@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react"
-import { Navigate, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import "./Collection.css"
 
 export const Collection = ({ searchTermState }) => {
     const [collection, setCollection] = useState([])
     const [filteredAlbums, setFilteredAlbums] = useState([])
+    const [collectionSortedByArtist, setCollectionSortedByArtist] = useState([])
+    const [collectionSortedByTitle, setCollectionSortedByTitle] = useState([])
+    const [collectionSortedByYear, setCollectionSortedByYear] = useState([])
+    const [sortOption, setSortOption] = useState(0)
 
     const localMelomaniaUser = localStorage.getItem("melomania_user")
     const melomaniaUserObject = JSON.parse(localMelomaniaUser)
@@ -19,12 +23,55 @@ export const Collection = ({ searchTermState }) => {
         }
         , []
     )
+    
     useEffect(
         () => {
-            setFilteredAlbums(collection)
+            const sortByArtist = collection.map(album => ({...album}))
+            sortByArtist.sort((a, b) => a.artist > b.artist ? 1 : -1,)
+            
+            setCollectionSortedByArtist(sortByArtist)
         }
         , [collection]
     )
+
+    useEffect(
+        () => {
+            const sortByTitle = collection.map(album => ({...album}))
+            sortByTitle.sort((a, b) => a.title > b.title ? 1 : -1,)
+            
+            setCollectionSortedByTitle(sortByTitle)
+        }
+        , [collection]
+    )
+
+    useEffect(
+        () => {
+            const sortByYear = collection.map(album => ({...album}))
+            sortByYear.sort((a, b) => a.year - b.year)
+            
+            setCollectionSortedByYear(sortByYear)
+        }
+        , [collection]
+    )
+
+    useEffect(
+        () => {
+            if (sortOption === 1) {
+                setFilteredAlbums(collectionSortedByArtist)}
+            else if (sortOption === 2) {
+                setFilteredAlbums(collectionSortedByTitle)}
+            else if (sortOption === 3) {
+                setFilteredAlbums(collectionSortedByYear)}
+            else {
+                setFilteredAlbums(collection)}
+        }
+        , [ sortOption, collection ]
+    )
+
+    /*
+        Implement a useEffect that pulls info from
+        collection and stores it into a new sorted array
+    */
 
     useEffect(
         () => {
@@ -38,7 +85,8 @@ export const Collection = ({ searchTermState }) => {
     return <>
         <form>
             <fieldset>
-                <select className="sort-selection">
+                <select className="sort-selection"
+                    onChange={(event) => setSortOption(parseInt(event.target.value))}>
                     <option value="0">Sort by...</option>
                     <option value="1">Artist</option>
                     <option value="2">Album Title</option>

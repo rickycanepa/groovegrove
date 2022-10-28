@@ -6,7 +6,7 @@ import { UserDetails } from "./UserDetails"
 export const UserCollectionContainer = () => {
     const { userId } = useParams()
     const [user, updateUser] = useState([])
-    const [userAlbums, updateUserAlbums] = useState([])
+    // const [userAlbums, updateUserAlbums] = useState([])
 
     useEffect(
         () => {
@@ -18,18 +18,18 @@ export const UserCollectionContainer = () => {
         }, []
     )
 
-    useEffect(
-        () => {
-            fetch(`http://localhost:8088/albums?userId=${userId}`)
-            .then(res => res.json())
-            .then((collectionData) => {
-                const userCollection = collectionData
-                updateUserAlbums(userCollection)})
-        }, []
-    )
+    // useEffect(
+    //     () => {
+    //         fetch(`http://localhost:8088/albums?userId=${userId}`)
+    //         .then(res => res.json())
+    //         .then((collectionData) => {
+    //             const userCollection = collectionData
+    //             updateUserAlbums(userCollection)})
+    //     }, []
+    // )
     
     return <>
     < UserDetails user={ user }/>
-    < UserCollection userAlbums={ userAlbums }/>
+    < UserCollection userId={ userId }/>
     </>
 }

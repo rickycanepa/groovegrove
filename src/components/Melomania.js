@@ -12,16 +12,17 @@ export const Melomania = () => {
         <Route path="/register" element={<Register />} />
         
         <Route path="*" element={
-            <Authorized>
             <>
                 <section className="header-container">
-                    <header id="header">MeloMania</header>
-                    <div id="subheader">Your album collection: digitized!</div>
+                <header id="header">MeloMania</header>
+                <div id="subheader">Your album collection: digitized!</div>
                 </section>
+            
+            <Authorized>
                 <NavBar />
                 <ApplicationViews />
-            </>
             </ Authorized>
+            </>
         } />
     </Routes>
 }
