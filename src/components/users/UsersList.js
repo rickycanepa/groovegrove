@@ -21,7 +21,8 @@ export const UsersList = () => {
         {
             users.map(user => < User key={user.id}
                 id={user.id}
-                userName={user.userName} />)
+                userName={user.userName}
+                userIcon={user.userIcon} />)
         }
         </article>
     </>
