@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
+import { Genres } from "../genres/Genres"
 import "./Collection.css"
 
 export const Collection = ({ searchTermState }) => {
@@ -17,12 +18,26 @@ export const Collection = ({ searchTermState }) => {
     
     useEffect(
         () => {
-            fetch(`http://localhost:8088/albums?userId=${melomaniaUserObject.id}`)
+            fetch(`http://localhost:8088/albums?_embed=albumGenres&userId=${melomaniaUserObject.id}`)
+            //fetch(`http://localhost:8088/albumGenres?_expand=album&_expand=genre`)
             .then(res => res.json())
             .then((collectionData) => {setCollection(collectionData)})
         }
         , []
     )
+
+    // const albumGenreList = (album) => {
+    //     const genreArray = []
+    //     genres.map(genreObj => {
+    //         if (album.albumGenres.id === genreObj.albumId) {
+    //             genreArray.push(genreObj.genre.name)
+    //         }
+    //         return genreArray.map(individualGenre => ({...individualGenre}))
+    //     }
+    //     )}
+
+    //if (album?.albumGenres?.genreId === genres.id) {
+    //    return genre.name }
     
     useEffect(
         () => {
@@ -54,6 +69,8 @@ export const Collection = ({ searchTermState }) => {
         , [collection]
     )
 
+    
+
     useEffect(
         () => {
             if (sortOption === 1) {
@@ -75,7 +92,7 @@ export const Collection = ({ searchTermState }) => {
 
     useEffect(
         () => {
-            const searchedAlbumsByTitle = collection.filter(album =>
+            const searchedAlbumsByTitle = filteredAlbums.filter(album =>
                 album.title.toLowerCase().startsWith(searchTermState.toLowerCase()))
             setFilteredAlbums(searchedAlbumsByTitle)
         },
@@ -107,6 +124,8 @@ export const Collection = ({ searchTermState }) => {
                                 <li className="title">{album.title}</li>
                                 <li className="artist">{album.artist}</li>
                                 <li className="album-year">{album.year}</li>
+                                <li className="album-genres"><Genres album={album}/></li>
+
                                 <li className="album-notes">{album.notes}</li>
                             </ul>
                         </div>
