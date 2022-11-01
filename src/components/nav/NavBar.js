@@ -7,7 +7,7 @@ export const NavBar = () => {
     return (
         <ul className="navbar">
             <li className="navbar__item navbar__collection">
-                <Link className="navbar__link" to="/collection">
+                <Link className="navbar__link" to="/">
                     Your Collection</Link>
             </li>
             <li className="navbar__item navbar__albumform">

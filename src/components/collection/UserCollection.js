@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Genres } from "../genres/Genres"
 import "./Collection.css"
 
 export const UserCollection = ({ userId }) => {
@@ -8,13 +9,6 @@ export const UserCollection = ({ userId }) => {
     const [collectionSortedByTitle, setCollectionSortedByTitle] = useState([])
     const [collectionSortedByYear, setCollectionSortedByYear] = useState([])
     const [sortOption, setSortOption] = useState(0)
-
-    // useEffect(
-    //     () => {
-    //         const userCollectionArray = userAlbums.map(album => ({...album}))
-    //         setCollection(userCollectionArray)}
-    //     , []
-    // )
 
     useEffect(
         () => {
@@ -95,6 +89,7 @@ export const UserCollection = ({ userId }) => {
                                 <li className="title">{album.title}</li>
                                 <li className="artist">{album.artist}</li>
                                 <li className="album-year">{album.year}</li>
+                                <li className="album-genres"><Genres album={album}/></li>
                                 <li className="album-notes">{album.notes}</li>
                             </ul>
                         </div>

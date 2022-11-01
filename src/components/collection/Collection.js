@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { Genres } from "../genres/Genres"
 import "./Collection.css"
 
-export const Collection = ({ searchTermState }) => {
+export const Collection = ({ searchTermState, searchParameter }) => {
     const [collection, setCollection] = useState([])
     const [filteredAlbums, setFilteredAlbums] = useState([])
     const [collectionSortedByArtist, setCollectionSortedByArtist] = useState([])
@@ -19,25 +19,11 @@ export const Collection = ({ searchTermState }) => {
     useEffect(
         () => {
             fetch(`http://localhost:8088/albums?_embed=albumGenres&userId=${melomaniaUserObject.id}`)
-            //fetch(`http://localhost:8088/albumGenres?_expand=album&_expand=genre`)
             .then(res => res.json())
             .then((collectionData) => {setCollection(collectionData)})
         }
         , []
     )
-
-    // const albumGenreList = (album) => {
-    //     const genreArray = []
-    //     genres.map(genreObj => {
-    //         if (album.albumGenres.id === genreObj.albumId) {
-    //             genreArray.push(genreObj.genre.name)
-    //         }
-    //         return genreArray.map(individualGenre => ({...individualGenre}))
-    //     }
-    //     )}
-
-    //if (album?.albumGenres?.genreId === genres.id) {
-    //    return genre.name }
     
     useEffect(
         () => {
@@ -82,7 +68,7 @@ export const Collection = ({ searchTermState }) => {
             else {
                 setFilteredAlbums(collection)}
         }
-        , [ sortOption, collection ]
+        , [ sortOption, collection, searchTermState ]
     )
 
     /*
@@ -92,11 +78,23 @@ export const Collection = ({ searchTermState }) => {
 
     useEffect(
         () => {
-            const searchedAlbumsByTitle = filteredAlbums.filter(album =>
-                album.title.toLowerCase().startsWith(searchTermState.toLowerCase()))
-            setFilteredAlbums(searchedAlbumsByTitle)
+            if (searchParameter === 1) {
+                const searchedAlbumsByArtist = filteredAlbums.filter(album =>
+                    album.artist.toLowerCase().startsWith(searchTermState.toLowerCase()))
+                setFilteredAlbums(searchedAlbumsByArtist)}
+            else if (searchParameter === 2) {
+                const searchedAlbumsByTitle = filteredAlbums.filter(album =>
+                    album.title.toLowerCase().startsWith(searchTermState.toLowerCase()))
+                setFilteredAlbums(searchedAlbumsByTitle)}
+            else if (searchParameter === 3) {
+                const searchedAlbumsByYear = filteredAlbums.filter(album =>
+                    album.year.startsWith(parseInt(searchTermState)))
+                setFilteredAlbums(searchedAlbumsByYear)}
+            else {
+                setFilteredAlbums(collection)}
+
         },
-        [ searchTermState ]
+        [ searchTermState , searchParameter ]
     )
 
     return <>
@@ -125,7 +123,6 @@ export const Collection = ({ searchTermState }) => {
                                 <li className="artist">{album.artist}</li>
                                 <li className="album-year">{album.year}</li>
                                 <li className="album-genres"><Genres album={album}/></li>
-
                                 <li className="album-notes">{album.notes}</li>
                             </ul>
                         </div>

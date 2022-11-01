@@ -23,7 +23,7 @@ export const AlbumEdit = () => {
         if (confirmation) {
             return fetch(`http://localhost:8088/albums/${album.id}`,
             { method: "DELETE" })
-            .then(navigate("/collection"))
+            .then(navigate("/"))
         }}
     
     useEffect(
@@ -58,7 +58,7 @@ export const AlbumEdit = () => {
             setFeedback("Employee profile successfully saved")
         })
         .then(() => {
-            navigate("/collection")
+            navigate("/")
         })
     }
 
