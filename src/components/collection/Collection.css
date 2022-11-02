@@ -82,3 +82,13 @@
     font: inherit;
     margin: 10px;
 }
+
+.genre-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genre-form {
+    display:block;
+    padding: 5px;
+}
