@@ -20,7 +20,34 @@ export const AddAlbumForm = () => {
 
     // create a helper function that will return an array of fetch calls
     // Take a parameter for the album id
-    // 
+    // creaate promiseArray varable and assighn value of map the albumGenreArray
+        // return fetch('http://localhost:8088/albumGenres, {
+            //method: "POST",
+            //headers: {
+                //         "Content-Type": "application/json"
+                //     },
+            //body: JSON.stringify({
+               // albumId: (parameter album id)
+               // genreId: (iterator of our albumGenreArray.map)
+            //})
+        //}
+    // return promiseArray
+
+    const promiseHelper = (albumData) => {
+        const promiseArray = albumGenreArray.map(genre => {
+            fetch('http://localhost:8088/albumGenres', {
+                method: "POST",
+                headers:
+                {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(
+                    { albumId: albumData.id, genreId: genre })
+                }
+            )
+        })
+        return promiseArray
+    }
 
     const handleSaveButtonClick = (event) => {
         event.preventDefault()
@@ -33,22 +60,6 @@ export const AddAlbumForm = () => {
             userId: melomaniaUserObject.id
         }
 
-        // // Don't do this yet
-        // const genreDataToSendToAPI = 
-        // albumGenreArray.map(genre => {
-        //     const genreId = genre
-        //     const albumId = 0
-        // })
-
-        // // Take this out of here, create a helper function
-        // const promises = genreDataToSendToAPI.map(genre => fetch('http://localhost:8088/albumGenres', {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json"
-        //     },
-        //     body: JSON.stringify(genre)}))
-
-
         return fetch('http://localhost:8088/albums', {
             method: "POST",
             headers: {
@@ -58,13 +69,14 @@ export const AddAlbumForm = () => {
         })
         .then(response => response.json())
         .then((albumData) => {
-            genreDataToSendToAPI.forEach(genreData => genreData.albumId = albumData.id)
-        })
-        .then(Promise.all(promises))
+            const genreDataToSendToAPI = promiseHelper(albumData)
+            return Promise.all(genreDataToSendToAPI)})
         .then(response => response.json())
         .then(() => {
             navigate("/")
         })
+            // call promise array helper function and store returned array to varable
+            // return Promise.all call and pass in promise array        
     }
 
     const genreDelete = (evt) => {
@@ -331,9 +343,3 @@ export const AddAlbumForm = () => {
         </form>
     )
 }
-
-// promise array promise.all
-
-/*
-promise.all([albumGenreArray])
-*/
