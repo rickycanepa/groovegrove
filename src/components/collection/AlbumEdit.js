@@ -6,7 +6,6 @@ export const AlbumEdit = () => {
     const { albumId } = useParams()
     const localMelomaniaUser = localStorage.getItem("melomania_user")
     const melomaniaUserObject = JSON.parse(localMelomaniaUser)
-    const [feedback, setFeedback] = useState("")
     const navigate = useNavigate()
 
     const [album, updateAlbum] = useState({
@@ -20,6 +19,7 @@ export const AlbumEdit = () => {
 
     const [albumGenreArray, updateAlbumGenreArray] = useState([])
     const [editedAlbumGenreArray, updateEditedAlbumGenreArray] = useState([])
+    const [genreDatabase, setGenreDatabase] = useState([])
 
     useEffect(
         () => {
@@ -36,6 +36,11 @@ export const AlbumEdit = () => {
                     genreObj.map(genre =>
                         updateAlbumGenreArray(previousState => [...previousState, genre.genreId]))
                 })
+            fetch('http://localhost:8088/albumGenres')
+                .then(res => res.json())
+                .then((genreData) => {
+                    setGenreDatabase(genreData)
+                })
         }, [])
 
     useEffect(
@@ -43,29 +48,42 @@ export const AlbumEdit = () => {
             updateEditedAlbumGenreArray(albumGenreArray)
         }, [albumGenreArray]
     )
+
     //    albumGenreArray : [2, 4, 6]
     //    editedAlbumGenreArray : [4, 7]
-    
-    // double for loop?
 
-    //    if albumGenreArray includes editedAlbumGenreArray genreId then do nothing
-    //    if albumGenreArray does not include editedAlbumGenreArray then delete
-    //    "POST", "DELETE", or nothing based on array comparison
+    //    double for loop?
+
+    //    if a number in albumGenreArray is also in editedAlbumGenreArray then do nothing
+    //    if a number in albumGenreArray is not in editedAlbumGenreArray then "DELETE" albumGenre object from database
+    //    if a number in editedAlbumGenreArray is not in albumGenreArray then "POST" albumGenre object to database
     //     Promise.all
 
     const promiseHelper = (albumData) => {
-        const promiseArray = albumGenreArray.map(genre => {
-            return fetch('http://localhost:8088/albumGenres', {
-                method: "PUT",
-                headers:
-                {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(
-                    { albumId: albumData.id, genreId: genre })
+        const promiseArray = []
+
+        albumGenreArray.map(albumGenreArrayIndex => {
+            if (!editedAlbumGenreArray.includes(albumGenreArrayIndex)) {
+                const foundAlbumGenreObj = genreDatabase.find((obj) => obj.albumId === albumData.id && obj.genreId === albumGenreArrayIndex)
+                return promiseArray.push(fetch(`http://localhost:8088/albumGenres/${foundAlbumGenreObj.id}`,
+                { method: "DELETE" }))
             }
-            )
         })
+
+        editedAlbumGenreArray.map(editedAlbumGenreArrayIndex => {
+            if (!albumGenreArray.includes(editedAlbumGenreArrayIndex)) {
+                return promiseArray.push(fetch('http://localhost:8088/albumGenres', {
+                        method: "POST",
+                        headers:
+                        {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(
+                            { albumId: albumData.id, genreId: editedAlbumGenreArrayIndex })
+                    }
+                    ))
+                }
+            })
         return promiseArray
     }
 
@@ -80,14 +98,6 @@ export const AlbumEdit = () => {
         }
     }
 
-
-    useEffect(() => {
-        if (feedback !== "") {
-            // Clear feedback to make entire element disappear after 3 seconds
-            setTimeout(() => setFeedback(""), 3000);
-        }
-    }, [feedback])
-
     const handleSaveButtonClick = (event) => {
         event.preventDefault()
 
@@ -99,8 +109,9 @@ export const AlbumEdit = () => {
             body: JSON.stringify(album)
         })
             .then(response => response.json())
-            .then(() => {
-                setFeedback("Employee profile successfully saved")
+            .then((albumData) => {
+                const genreDataToSendToAPI = promiseHelper(albumData)
+                Promise.all(genreDataToSendToAPI)
             })
             .then(() => {
                 navigate("/")
@@ -108,7 +119,6 @@ export const AlbumEdit = () => {
     }
 
     const genreDelete = (evt) => {
-        debugger
         const copy = [...editedAlbumGenreArray]
         const index = copy.indexOf(parseInt(evt.target.value))
         if (index > -1) {
@@ -119,9 +129,6 @@ export const AlbumEdit = () => {
 
     return (
         <>
-            <div className={`${feedback.includes("Error") ? "error" : "feedback"} ${feedback === "" ? "invisible" : "visible"}`}>
-                {feedback}
-            </div>
             <form className="albumForm">
                 <h2 className="albumForm-title">Edit an Album in your Collection</h2>
                 <fieldset>

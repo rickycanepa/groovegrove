@@ -73,7 +73,6 @@ export const UserCollection = ({ userId }) => {
                     <option value="1">Artist</option>
                     <option value="2">Album Title</option>
                     <option value="3">Year</option>
-                    <option value="4">Genre</option>
                 </select>
             </fieldset>
         </form>
