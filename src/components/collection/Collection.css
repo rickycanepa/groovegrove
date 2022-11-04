@@ -61,6 +61,8 @@
 
 .btn-container {
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .edit-button {
@@ -81,4 +83,23 @@
     box-shadow: 10px 10px 5px darkgray;
     font: inherit;
     margin: 10px;
+}
+
+.btn-primary {
+    height: 15%;
+    border-radius: 20px;
+    background-color: blue;
+    padding: 8px;
+    box-shadow: 10px 10px 5px darkgray;
+    font: inherit;
+}
+
+.genre-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genre-form {
+    display:block;
+    padding: 5px;
 }

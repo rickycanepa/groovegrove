@@ -5,7 +5,7 @@ import "./Collection.css"
 
 export const Collection = ({ searchTermState, searchParameter }) => {
     const [collection, setCollection] = useState([])
-    const [filteredAlbums, setFilteredAlbums] = useState([])
+    const [sortedAlbums, setSortedAlbums] = useState([])
     const [collectionSortedByArtist, setCollectionSortedByArtist] = useState([])
     const [collectionSortedByTitle, setCollectionSortedByTitle] = useState([])
     const [collectionSortedByYear, setCollectionSortedByYear] = useState([])
@@ -55,20 +55,18 @@ export const Collection = ({ searchTermState, searchParameter }) => {
         , [collection]
     )
 
-    
-
     useEffect(
         () => {
             if (sortOption === 1) {
-                setFilteredAlbums(collectionSortedByArtist)}
+                setSortedAlbums(collectionSortedByArtist)}
             else if (sortOption === 2) {
-                setFilteredAlbums(collectionSortedByTitle)}
+                setSortedAlbums(collectionSortedByTitle)}
             else if (sortOption === 3) {
-                setFilteredAlbums(collectionSortedByYear)}
+                setSortedAlbums(collectionSortedByYear)}
             else {
-                setFilteredAlbums(collection)}
+                setSortedAlbums(collection)}
         }
-        , [ sortOption, collection, searchTermState ]
+        , [ sortOption, collection ]
     )
 
     /*
@@ -79,19 +77,19 @@ export const Collection = ({ searchTermState, searchParameter }) => {
     useEffect(
         () => {
             if (searchParameter === 1) {
-                const searchedAlbumsByArtist = filteredAlbums.filter(album =>
+                const searchedAlbumsByArtist = sortedAlbums.filter(album =>
                     album.artist.toLowerCase().startsWith(searchTermState.toLowerCase()))
-                setFilteredAlbums(searchedAlbumsByArtist)}
+                setSortedAlbums(searchedAlbumsByArtist)}
             else if (searchParameter === 2) {
-                const searchedAlbumsByTitle = filteredAlbums.filter(album =>
+                const searchedAlbumsByTitle = sortedAlbums.filter(album =>
                     album.title.toLowerCase().startsWith(searchTermState.toLowerCase()))
-                setFilteredAlbums(searchedAlbumsByTitle)}
+                setSortedAlbums(searchedAlbumsByTitle)}
             else if (searchParameter === 3) {
-                const searchedAlbumsByYear = filteredAlbums.filter(album =>
-                    album.year.startsWith(parseInt(searchTermState)))
-                setFilteredAlbums(searchedAlbumsByYear)}
+                const searchedAlbumsByYear = sortedAlbums.filter(album =>
+                    album.year.toString().startsWith((searchTermState)))
+                setSortedAlbums(searchedAlbumsByYear)}
             else {
-                setFilteredAlbums(collection)}
+                setSortedAlbums(collection)}
 
         },
         [ searchTermState , searchParameter ]
@@ -106,12 +104,11 @@ export const Collection = ({ searchTermState, searchParameter }) => {
                     <option value="1">Artist</option>
                     <option value="2">Album Title</option>
                     <option value="3">Year</option>
-                    <option value="4">Genre</option>
                 </select>
             </fieldset>
         </form>
         <section className="collection-container">
-            { filteredAlbums.map(album => {
+            { sortedAlbums.map(album => {
                 return (
                     <div className="album-container" key={album.id}>
                         <div className="album-data">

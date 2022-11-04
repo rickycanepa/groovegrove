@@ -6,7 +6,7 @@ export const AddAlbumForm = () => {
     const localMelomaniaUser = localStorage.getItem("melomania_user")
     const melomaniaUserObject = JSON.parse(localMelomaniaUser)
     const navigate = useNavigate()
-    
+
     const [album, updateAlbum] = useState({
         title: "",
         artist: "",
@@ -15,10 +15,28 @@ export const AddAlbumForm = () => {
         notes: "",
         userId: melomaniaUserObject.id
     })
-    const [albumGenre, updateAlbumGenre] = useState({
-        genreId: 0,
-        albumId: 0
-    })
+
+    const [albumGenreArray, updateAlbumGenreArray] = useState([])
+
+    // create a helper function that will return an array of fetch calls
+    // Take a parameter for the album id
+    // create promiseArray variable and assign it value of .map(albumGenreArray)
+
+    const promiseHelper = (albumData) => {
+        const promiseArray = albumGenreArray.map(genre => {
+            return fetch('http://localhost:8088/albumGenres', {
+                method: "POST",
+                headers:
+                {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(
+                    { albumId: albumData.id, genreId: genre })
+            }
+            )
+        })
+        return promiseArray
+    }
 
     const handleSaveButtonClick = (event) => {
         event.preventDefault()
@@ -30,10 +48,6 @@ export const AddAlbumForm = () => {
             notes: album.notes,
             userId: melomaniaUserObject.id
         }
-        const genreDataToSendToAPI = {
-            albumId: album.id,
-            genreId: genre.id,
-        }
 
         return fetch('http://localhost:8088/albums', {
             method: "POST",
@@ -42,22 +56,25 @@ export const AddAlbumForm = () => {
             },
             body: JSON.stringify(albumDataToSendToAPI)
         })
-        .then(response => response.json())
-        .then((albumGenreData) => {
-            genreDataToSendToAPI.albumId = albumGenreData.id
-        })
-        .then(fetch('http://localhost:8088/albumGenres', {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(genreDataToSendToAPI)
-        }))
-        .then(response => response.json())
-        .then(() => {
-            navigate("/")
-        })
+            .then(response => response.json())
+            .then((albumData) => {
+                const genreDataToSendToAPI = promiseHelper(albumData)
+                Promise.all(genreDataToSendToAPI)
+            })
+            .then(() => {
+                navigate("/")
+            })
+        // call promise array helper function and store returned array to variable
+        // return Promise.all call and pass in promise array        
+    }
 
+    const genreDelete = (evt) => {
+        const copy = [...albumGenreArray]
+        const index = copy.indexOf(parseInt(evt.target.value))
+        if (index > -1) {
+            copy.splice(index, 1)
+            updateAlbumGenreArray(copy)
+        }
     }
 
     return (
@@ -74,7 +91,7 @@ export const AddAlbumForm = () => {
                         value={album.title}
                         onChange={
                             (evt) => {
-                                const copy = {...album}
+                                const copy = { ...album }
                                 copy.title = evt.target.value
                                 updateAlbum(copy)
                             }
@@ -92,7 +109,7 @@ export const AddAlbumForm = () => {
                         value={album.artist}
                         onChange={
                             (evt) => {
-                                const copy = {...album}
+                                const copy = { ...album }
                                 copy.artist = evt.target.value
                                 updateAlbum(copy)
                             }
@@ -110,7 +127,7 @@ export const AddAlbumForm = () => {
                         value={album.year}
                         onChange={
                             (evt) => {
-                                const copy = {...album}
+                                const copy = { ...album }
                                 copy.year = parseInt(evt.target.value)
                                 updateAlbum(copy)
                             }
@@ -128,7 +145,7 @@ export const AddAlbumForm = () => {
                         value={album.coverArt}
                         onChange={
                             (evt) => {
-                                const copy = {...album}
+                                const copy = { ...album }
                                 copy.coverArt = evt.target.value
                                 updateAlbum(copy)
                             }
@@ -146,7 +163,7 @@ export const AddAlbumForm = () => {
                         value={album.notes}
                         onChange={
                             (evt) => {
-                                const copy = {...album}
+                                const copy = { ...album }
                                 copy.notes = evt.target.value
                                 updateAlbum(copy)
                             }
@@ -161,135 +178,153 @@ export const AddAlbumForm = () => {
                         <input
                             type="checkbox"
                             className="form-control"
-                            value={albumGenre.genreId}
+                            value="1"
                             onChange={
                                 (evt) => {
-                                    const copy = {...albumGenre}
-                                    copy.genreId = evt.target.checked
-                                    updateAlbumGenre(copy)
-                            }
-                        } />
+                                    if (!albumGenreArray.includes(parseInt(evt.target.value))) {
+                                        updateAlbumGenreArray(previousState => [...previousState, parseInt(evt.target.value)])
+                                    } else {
+                                        genreDelete(evt)
+                                    }
+                                }
+                            } />
                     </div>
                     <div className="genre-form">
                         <label htmlFor="blues">Blues</label>
                         <input
                             type="checkbox"
                             className="form-control"
-                            value={albumGenre.genreId}
+                            value="2"
                             onChange={
                                 (evt) => {
-                                    const copy = {...albumGenre}
-                                    copy.genreId = evt.target.checked
-                                    updateAlbumGenre(copy)
-                            }
-                        } />
+                                    if (!albumGenreArray.includes(parseInt(evt.target.value))) {
+                                        updateAlbumGenreArray(previousState => [...previousState, parseInt(evt.target.value)])
+                                    } else {
+                                        genreDelete(evt)
+                                    }
+                                }
+                            } />
                     </div>
                     <div className="genre-form">
                         <label htmlFor="jazz">Jazz</label>
                         <input
                             type="checkbox"
                             className="form-control"
-                            value={albumGenre.genreId}
+                            value="3"
                             onChange={
                                 (evt) => {
-                                    const copy = {...albumGenre}
-                                    copy.genreId = evt.target.checked
-                                    updateAlbumGenre(copy)
-                            }
-                        } />
+                                    if (!albumGenreArray.includes(parseInt(evt.target.value))) {
+                                        updateAlbumGenreArray(previousState => [...previousState, parseInt(evt.target.value)])
+                                    } else {
+                                        genreDelete(evt)
+                                    }
+                                }
+                            } />
                     </div>
                     <div className="genre-form">
                         <label htmlFor="country">Country</label>
                         <input
                             type="checkbox"
                             className="form-control"
-                            value={albumGenre.genreId}
+                            value="4"
                             onChange={
                                 (evt) => {
-                                    const copy = {...albumGenre}
-                                    copy.genreId = evt.target.checked
-                                    updateAlbumGenre(copy)
-                            }
-                        } />
+                                    if (!albumGenreArray.includes(parseInt(evt.target.value))) {
+                                        updateAlbumGenreArray(previousState => [...previousState, parseInt(evt.target.value)])
+                                    } else {
+                                        genreDelete(evt)
+                                    }
+                                }
+                            } />
                     </div>
                     <div className="genre-form">
                         <label htmlFor="soul">Soul</label>
                         <input
                             type="checkbox"
                             className="form-control"
-                            value={albumGenre.genreId}
+                            value="5"
                             onChange={
                                 (evt) => {
-                                    const copy = {...albumGenre}
-                                    copy.genreId = evt.target.checked
-                                    updateAlbumGenre(copy)
-                            }
-                        } />
+                                    if (!albumGenreArray.includes(parseInt(evt.target.value))) {
+                                        updateAlbumGenreArray(previousState => [...previousState, parseInt(evt.target.value)])
+                                    } else {
+                                        genreDelete(evt)
+                                    }
+                                }
+                            } />
                     </div>
                     <div className="genre-form">
                         <label htmlFor="funk">Funk</label>
                         <input
                             type="checkbox"
                             className="form-control"
-                            value={albumGenre.genreId}
+                            value="6"
                             onChange={
                                 (evt) => {
-                                    const copy = {...albumGenre}
-                                    copy.genreId = evt.target.checked
-                                    updateAlbumGenre(copy)
-                            }
-                        } />
+                                    if (!albumGenreArray.includes(parseInt(evt.target.value))) {
+                                        updateAlbumGenreArray(previousState => [...previousState, parseInt(evt.target.value)])
+                                    } else {
+                                        genreDelete(evt)
+                                    }
+                                }
+                            } />
                     </div>
                     <div className="genre-form">
                         <label htmlFor="classical-soundtrack">Classical/Soundtrack</label>
                         <input
                             type="checkbox"
                             className="form-control"
-                            value={albumGenre.genreId}
+                            value="7"
                             onChange={
                                 (evt) => {
-                                    const copy = {...albumGenre}
-                                    copy.genreId = evt.target.checked
-                                    updateAlbumGenre(copy)
-                            }
-                        } />
+                                    if (!albumGenreArray.includes(parseInt(evt.target.value))) {
+                                        updateAlbumGenreArray(previousState => [...previousState, parseInt(evt.target.value)])
+                                    } else {
+                                        genreDelete(evt)
+                                    }
+                                }
+                            } />
                     </div>
                     <div className="genre-form">
                         <label htmlFor="reggae">Reggae</label>
                         <input
                             type="checkbox"
                             className="form-control"
-                            value={albumGenre.genreId}
+                            value="8"
                             onChange={
                                 (evt) => {
-                                    const copy = {...albumGenre}
-                                    copy.genreId = evt.target.checked
-                                    updateAlbumGenre(copy)
-                            }
-                        } />
+                                    if (!albumGenreArray.includes(parseInt(evt.target.value))) {
+                                        updateAlbumGenreArray(previousState => [...previousState, parseInt(evt.target.value)])
+                                    } else {
+                                        genreDelete(evt)
+                                    }
+                                }
+                            } />
                     </div>
                     <div className="genre-form">
                         <label htmlFor="metal">Metal</label>
                         <input type="checkbox"
                             className="form-control"
-                            value={albumGenre.genreId}
+                            value="9"
                             onChange={
                                 (evt) => {
-                                    const copy = {...albumGenre}
-                                    copy.genreId = evt.target.checked
-                                    updateAlbumGenre(copy)
+                                    if (!albumGenreArray.includes(parseInt(evt.target.value))) {
+                                        updateAlbumGenreArray(previousState => [...previousState, parseInt(evt.target.value)])
+                                    } else {
+                                        genreDelete(evt)
+                                    }
                                 }
-                        } />
+                            } />
                     </div>
                 </div>
             </fieldset>
-            <button 
-            onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
-            className="btn btn-primary">
+            <div className="btn-container">
+            <button
+                onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
+                className="btn btn-primary">
                 Add To Collection
             </button>
+            </div>
         </form>
     )
 }
-
-// promise array promise.all
