@@ -1,0 +1,2493 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Justin",
+      "userName": "jsweet89",
+      "email": "jtsweeten@gmail.com",
+      "location": "Nashville TN",
+      "admin": true,
+      "userIcon": "https://thespongeclub.com/wp-content/uploads/2022/05/squidward-plays-clarinet-e1653387115296.png"
+    },
+    {
+      "id": 2,
+      "firstName": "Shrimply",
+      "userName": "spaceJamz",
+      "email": "allhailgathorplthorp.com",
+      "location": "Whitefish MT",
+      "admin": true,
+      "userIcon": "https://as2.ftcdn.net/v2/jpg/04/41/24/61/1000_F_441246190_sPXN5WQXZsBDwyFDJHSrv6wcmjBG6kDU.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Guy",
+      "userName": "FlavortownMayor",
+      "email": "mayorofflavortown@aol.com",
+      "location": "Miami FL",
+      "admin": false,
+      "userIcon": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Circle-icons-flame.svg"
+    },
+    {
+      "id": 4,
+      "firstName": "Alexander",
+      "userName": "StarshipTrooper",
+      "email": "byGrabtharsHammer@netscape.net",
+      "location": "Culver City CA",
+      "admin": true,
+      "userIcon": "https://as1.ftcdn.net/v2/jpg/04/33/17/96/1000_F_433179657_qf85e9RnuDwPujKy8Tvh7STBQqEMD4Ou.jpg"
+    },
+    {
+      "id": 5,
+      "firstName": "Peggy",
+      "userName": "CountryLuvr87",
+      "email": "awHank92@gmail.com",
+      "location": "El Paso TX",
+      "admin": false,
+      "userIcon": "https://qph.cf2.quoracdn.net/main-qimg-fb35f63d27dae7e7194911cd757cebbf-lq"
+    },
+    {
+      "id": 6,
+      "firstName": "Joan",
+      "userName": "GimmieThoseClassix",
+      "email": "girlisonfire@firefox.com",
+      "location": "New York City NY",
+      "admin": false,
+      "userIcon": "https://as2.ftcdn.net/v2/jpg/02/26/43/65/1000_F_226436529_ZWsUWBHfeXv7zhdrxlX1pckmGVwvPqJp.jpg"
+    },
+    {
+      "id": 7,
+      "firstName": "William",
+      "userName": "BobKnowsBest",
+      "email": "whataboutbob@yahoo.com",
+      "location": "San Bernadino CA",
+      "admin": true,
+      "userIcon": "https://www.tshirtsonscreen.com/wp-content/uploads/2020/02/whataboutbobdonthasslemimlocaltshirtbillmurray-1024x658.jpg"
+    },
+    {
+      "id": 8,
+      "firstName": "Tony",
+      "userName": "PunkoRamaVol9",
+      "email": "prosk8er4real@gmail.com",
+      "location": "Detroit MI",
+      "admin": false,
+      "userIcon": "https://as1.ftcdn.net/v2/jpg/02/07/74/38/1000_F_207743816_RXDV8x2QWB35nbHUUJu6JcPwejuSn0M5.jpg"
+    },
+    {
+      "id": 9,
+      "firstName": "Joseph",
+      "userName": "JukeboxMan81",
+      "email": "johndeeregreen@netscape.net",
+      "location": "Birmingham AL",
+      "admin": false,
+      "userIcon": "https://as1.ftcdn.net/v2/jpg/04/72/89/52/1000_F_472895222_YALHZXrKgmn0juSCtIITpk1ubV55L4UV.jpg"
+    },
+    {
+      "id": 10,
+      "firstName": "Hank",
+      "userName": "AcousticCat",
+      "email": "allUrRowdyFriends@aol.com",
+      "location": "Lexington KY",
+      "admin": true,
+      "userIcon": "https://st2.depositphotos.com/3244893/10911/v/950/depositphotos_109117462-stock-illustration-acoustic-guitar-icon.jpg"
+    },
+    {
+      "id": 11,
+      "firstName": "Robin",
+      "userName": "MisterDoubtfire",
+      "email": "hotjambalaya@disney.com",
+      "location": "Beverly Hills CA",
+      "admin": false,
+      "userIcon": "https://s.yimg.com/ny/api/res/1.2/_rKXkr7WcQacaqPy5yLcEg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY2MDtjZj13ZWJw/https://media.zenfs.com/en/people_218/9838af19b4255bdbac4dd1342d55e6fe"
+    },
+    {
+      "id": 12,
+      "firstName": "Richard",
+      "userName": "ShowMeWhatYouGot",
+      "email": "worldender42@yahoo.com",
+      "location": "Gloucester MA",
+      "admin": true,
+      "userIcon": "https://as1.ftcdn.net/v2/jpg/05/03/60/28/1000_F_503602807_wzoZh5oHAe9LuFOQsi0GLyUmns2ztMYe.jpg"
+    },
+    {
+      "id": 13,
+      "firstName": "Lance",
+      "userName": "FivePartHarmony",
+      "email": "outofSYNC@gmail.com",
+      "location": "Orlando FL",
+      "admin": false,
+      "userIcon": "https://as2.ftcdn.net/v2/jpg/01/78/44/55/1000_F_178445554_TE95cETAPpwuuNipI2whDjgqS5yZKWKd.jpg"
+    },
+    {
+      "id": 14,
+      "firstName": "Davey",
+      "userName": "FiddleNSteel",
+      "email": "kingofthewildfrontier@compaq.com",
+      "location": "Little Rock AR",
+      "admin": false,
+      "userIcon": "https://assets.classicfm.com/2014/34/thinkstock-violin-photos-1409319916-view-0.jpg"
+    },
+    {
+      "id": 15,
+      "firstName": "Bo",
+      "userName": "BluesBrother",
+      "email": "SchmoSchmiddley@netscape.net",
+      "location": "Chicago IL",
+      "admin": false,
+      "userIcon": "https://upload.wikimedia.org/wikipedia/en/f/f5/BluesBrothers.jpg"
+    },
+    {
+      "id": 16,
+      "firstName": "Eric",
+      "userName": "CallMeSlowhand",
+      "email": "literallyEricClapton@gmail.com",
+      "location": "Allentown PA",
+      "admin": false,
+      "userIcon": "https://as2.ftcdn.net/v2/jpg/03/15/06/77/1000_F_315067736_MDDNWUHy2zU2GjDKVbur506DlngA7W7K.jpg"
+    },
+    {
+      "id": 17,
+      "firstName": "Johnathan",
+      "userName": "BachstreetBoi",
+      "email": "POTUSnumeroDOS@aol.com",
+      "location": "Alexandria VA",
+      "admin": false,
+      "userIcon": "https://interlude-cdn-blob-prod.azureedge.net/interlude-blob-storage-prod/2021/08/bachglasses2.jpg"
+    },
+    {
+      "id": 18,
+      "firstName": "Larry",
+      "userName": "PumpTheJamz",
+      "email": "BallAllDay@yahoo.com",
+      "location": "Gary IN",
+      "admin": false,
+      "userIcon": "https://as2.ftcdn.net/v2/jpg/03/52/65/97/1000_F_352659717_HiQ04vlMm0D4FWPp6oXTUa1TX1w7lhAs.jpg"
+    },
+    {
+      "id": 19,
+      "firstName": "Joe",
+      "userName": "LifeOfIllusion420",
+      "email": "joewalsh72@gmail.com",
+      "location": "Reno NV",
+      "admin": false,
+      "userIcon": "https://upload.wikimedia.org/wikipedia/en/7/75/Joe_Walsh_-_But_Seriously_Folks.jpg"
+    },
+    {
+      "id": 20,
+      "firstName": "George",
+      "userName": "MetalMuzik666",
+      "email": "George4man@microsoft.com",
+      "location": "Oklahoma City OK",
+      "admin": false,
+      "userIcon": "https://as1.ftcdn.net/v2/jpg/03/97/18/38/1000_F_397183867_dbX7ojLL8ahZt79RnG0O0wikbhrHrIYL.jpg"
+    }
+  ],
+  "albums": [
+    {
+      "id": 1,
+      "title": "Dark Side of the Moon",
+      "artist": "Pink Floyd",
+      "year": 1973,
+      "coverArt": "https://i.discogs.com/mwWMy1jLJhX7BGUigOAzbMQjmN6y2a9ppdzulDAUYSU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NzMw/MTMtMTQ3MTEwMDM4/MS0zMDIyLmpwZWc.jpeg",
+      "notes": "One of my favorite records of all time. I got this from my grandfather for my 14th birthday",
+      "userId": 3
+    },
+    {
+      "id": 2,
+      "title": "The Beatles (White Album)",
+      "artist": "The Beatles",
+      "year": 1968,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/commons/2/20/TheBeatles68LP.jpg",
+      "notes": "Found at a yard sale in 2010",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "title": "Aja",
+      "artist": "Steely Dan",
+      "year": 1977,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/4/49/Aja_album_cover.jpg",
+      "notes": "Received as a gift for my 31st birthday",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "title": "Love Songs",
+      "artist": "The Beatles",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/f/f7/TheBeatlesLoveSongsalbumcover.jpg",
+      "notes": "Received as a gift for my 33rd birthday, i love this thing",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "title": "Weekend In L.A.",
+      "artist": "George Benson",
+      "year": 1978,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/b/b0/George_Benson_Weekend_in_LA.jpg",
+      "notes": "Live album recorded at the Roxy Theatre in West Hollywood CA. Purchased at McKay's in Nashville TN.",
+      "userId": 1
+    },
+    {
+      "title": "Greatest Hits 1974-78",
+      "artist": "Steve Miller Band",
+      "year": 1978,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/1/10/SMB_Greatest_Hits-1974-78.jpg",
+      "notes": "Great album from a great band! Purchased at McKay's in Nashville TN",
+      "id": 6,
+      "userId": 7
+    },
+    {
+      "title": "One of These Nights",
+      "artist": "Eagles",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/3/30/The_Eagles_-_One_of_These_Nights.jpg",
+      "notes": "Purchased from Tres Gatos in Jamaica Plains from my wife as a gift for joining an Eagles tribute",
+      "id": 7,
+      "userId": 1
+    },
+    {
+      "title": "Desperado",
+      "artist": "Eagles",
+      "year": 1973,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/c/c0/The_Eagles_-_Desperado.jpg",
+      "notes": "Received as a gift when I joined an Eagles Tribute",
+      "id": 8,
+      "userId": 13
+    },
+    {
+      "title": "Elvis is Back!",
+      "artist": "Elvis Presley",
+      "year": 1960,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/6/64/Elvis_is_Back%21.jpg",
+      "notes": "Found in my grandparents basement in 2006",
+      "id": 9,
+      "userId": 19
+    },
+    {
+      "title": "L. A. Woman",
+      "artist": "The Doors",
+      "year": 1971,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/4/41/The_Doors_-_L.A._Woman.jpg",
+      "notes": "Greatest Doors album of all time! Found at Grimey's East in Nashville TN",
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "title": "Physical Graffiti",
+      "artist": "Led Zeppelin",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/e3/Led_Zeppelin_-_Physical_Graffiti.jpg",
+      "notes": "Bought at Virgin Records in Manhattan NY 1981",
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "title": "But Seriously, Folks",
+      "artist": "Joe Walsh",
+      "year": 1978,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/7/75/Joe_Walsh_-_But_Seriously_Folks.jpg",
+      "notes": "Bought and signed at Joe's concert in 1982!",
+      "userId": 19,
+      "id": 12
+    },
+    {
+      "title": "The Smoker You Drink, the Player You Get",
+      "artist": "Joe Walsh",
+      "year": 1973,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/c/c3/Joe_Walsh_-_The_Smoker_You_Drink%2C_the_Player_You_Get.jpg",
+      "notes": "Used to listen to this with my grandfather growing up. I never understood the title until I got older...",
+      "userId": 18,
+      "id": 13
+    },
+    {
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/4/49/Hotelcalifornia.jpg",
+      "notes": "LOVE LOVE LOVE this album I've been listening to it several times a month since I bought it in 1992",
+      "userId": 14,
+      "id": 14
+    },
+    {
+      "title": "Saturday Night Fever",
+      "artist": "Bee Gees, Various Artists",
+      "year": 1977,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/0/0c/TheBeeGeesSaturdayNightFeveralbumcover.jpg",
+      "notes": "Soundtrack album from the film Saturday Night Fever. One of the top ten best-selling albums of all time!",
+      "userId": 14,
+      "id": 15
+    },
+    {
+      "title": "Bluegrass Revue",
+      "artist": "Various Artists",
+      "year": 1972,
+      "coverArt": "https://i.discogs.com/OTEtE18tnibmgB3R99B6Cg8xksYnvxEwV-JT9KYbw4U/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzMzI4/MDQtMTQxNjY4NTc4/NS02NTAyLmpwZWc.jpeg",
+      "notes": "Picked up at McKay's in Nashville TN",
+      "userId": 14,
+      "id": 16
+    },
+    {
+      "title": "The Bodyguard: Original Soundtrack Album",
+      "artist": "Whitney Houston, Various Artists",
+      "year": 1992,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/f/f3/TheBodyguardSoundtrack.jpg",
+      "notes": "One of the best-selling albums of all time. Whitney is killing it!",
+      "userId": 13,
+      "id": 17
+    },
+    {
+      "title": "Time Out",
+      "artist": "Dave Brubeck Quartet",
+      "year": 1959,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/e5/Time_out_album_cover.jpg",
+      "notes": "First jazz album to ever sell one million copies! Truly a historic record.",
+      "userId": 13,
+      "id": 18
+    },
+    {
+      "title": "I'm Your Baby Tonight",
+      "artist": "Whitney Houston",
+      "year": 1990,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/a/a3/Whitney_Houston_I%27m_Your_Baby_Tonight_Cover.jpg",
+      "notes": "Bought during my first date with my now husband in 1991. So many memories!",
+      "userId": 17,
+      "id": 19
+    },
+    {
+      "title": "Thriller",
+      "artist": "Michael Jackson",
+      "year": 1982,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png",
+      "notes": "One of the best-selling albums of all time. Now Beat It!",
+      "userId": 17,
+      "id": 20
+    },
+    {
+      "title": "Van Halen",
+      "artist": "Van Halen",
+      "year": 1978,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/0/0d/Van_Halen_album.jpg",
+      "notes": "Melted my little ten year old brain when I heard Eddie play. So influential!",
+      "userId": 4,
+      "id": 21
+    },
+    {
+      "title": "Van Halen II",
+      "artist": "Van Halen",
+      "year": 1979,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/3/35/Van_Halen_-_Van_Halen_II.jpg",
+      "notes": "Certified 5x Platinum. Eddie does it again",
+      "userId": 4,
+      "id": 22
+    },
+    {
+      "title": "Women and Children First",
+      "artist": "Van Halen",
+      "year": 1980,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/eb/Van_Halen_-_Women_and_Children_First.jpg",
+      "notes": "Third studio album. The hits keep coming!",
+      "userId": 20,
+      "id": 23
+    },
+    {
+      "title": "1984",
+      "artist": "Van Halen",
+      "year": 1984,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/5/5f/Van_Halen_-_1984.jpg",
+      "notes": "Last full-length VH album to feature all four original members",
+      "userId": 7,
+      "id": 24
+    },
+    {
+      "title": "For Unlawful Carnal Knowledge",
+      "artist": "Van Halen",
+      "year": 1991,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/7/71/Van_Halen_-_For_Unlawful_Carnal_Knowledge.jpg",
+      "notes": "Ehh Sammy is alright",
+      "userId": 2,
+      "id": 25
+    },
+    {
+      "title": "E. T. the Extra Terrestrial (Soundtrack)",
+      "artist": "John Williams",
+      "year": 1982,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/8/83/E.T._the_Extra-Terrestrial_%28soundtrack%29.jpg",
+      "notes": "Academy Award for Best Original Score, Grammy Award for Best Score Soundtrack for Visual Media. Classic John Williams",
+      "userId": 3,
+      "id": 26
+    },
+    {
+      "title": "Forever, Michael",
+      "artist": "Michael Jackson",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/8/8a/Forever%2C_Michael.png",
+      "notes": "Bought in Philadelphia in 1977. Afros were still cool!",
+      "userId": 4,
+      "id": 27
+    },
+    {
+      "title": "Back In Black",
+      "artist": "AC/DC",
+      "year": 1980,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/commons/3/3e/ACDC_Back_in_Black_cover.svg",
+      "notes": "One of the best rock albums ever! Bought in 1994 on Sunset Strip",
+      "userId": 5,
+      "id": 28
+    },
+    {
+      "title": "Rumours",
+      "artist": "Fleetwood Mac",
+      "year": 1977,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG",
+      "notes": "Got me through some tough times. Thank you Stevie!",
+      "userId": 6,
+      "id": 29
+    },
+    {
+      "title": "Fleetwood Mac",
+      "artist": "Fleetwood Mac",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/b/b1/Fleetwood_Mac_-_Fleetwood_Mac_%281975%29.png",
+      "notes": "Their SECOND eponymous album, the other being in 1968 also known as \"The White Album\"",
+      "userId": 7,
+      "id": 30
+    },
+    {
+      "title": "Appetite For Destruction",
+      "artist": "Guns 'N' Roses",
+      "year": 1987,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg",
+      "notes": "You're in the jungle baby!",
+      "userId": 8,
+      "id": 31
+    },
+    {
+      "title": "G N' R Lies",
+      "artist": "Guns 'N' Roses",
+      "year": 1988,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/a/ad/GNR_GNRLies_Original.jpg",
+      "notes": "Super short album. Only 33 and a half minutes!",
+      "userId": 9,
+      "id": 32
+    },
+    {
+      "title": "Use Your Illusion",
+      "artist": "Guns 'N' Roses",
+      "year": 1991,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/ea/GnR--UseYourIllusion1.jpg",
+      "notes": "Bought at Virgin Records 1993 Orlando FL",
+      "userId": 10,
+      "id": 33
+    },
+    {
+      "title": "Abbey Road",
+      "artist": "The Beatles",
+      "year": 1969,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg",
+      "notes": "Revolutionary for their time. George Martin is a visionary",
+      "userId": 11,
+      "id": 34
+    },
+    {
+      "title": "Help!",
+      "artist": "The Beatles",
+      "year": 1965,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/e7/Help%21_%28The_Beatles_album_-_cover_art%29.jpg",
+      "notes": "Fifth studio album for the Fab Four",
+      "userId": 12,
+      "id": 35
+    },
+    {
+      "title": "Rubber Soul",
+      "artist": "The Beatles",
+      "year": 1965,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/7/74/Rubber_Soul.jpg",
+      "notes": "My favorite album of all time. Bought at a pawn shop in Austin TX",
+      "userId": 13,
+      "id": 36
+    },
+    {
+      "title": "Revolver",
+      "artist": "The Beatles",
+      "year": 1966,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/ec/Revolver_%28album_cover%29.jpg",
+      "notes": "I'm the Tax Man!",
+      "userId": 14,
+      "id": 37
+    },
+    {
+      "title": "Sgt. Pepper's Lonely Hearts Club Band",
+      "artist": "The Beatles",
+      "year": 1967,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/5/50/Sgt._Pepper%27s_Lonely_Hearts_Club_Band.jpg",
+      "notes": "BIIIIILLLLYYYYYYY SHEEAAAARRRRRRSSSSSS",
+      "userId": 15,
+      "id": 38
+    },
+    {
+      "title": "Magical Mystery Tour",
+      "artist": "The Beatles",
+      "year": 1967,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/e8/MagicalMysteryTourDoubleEPcover.jpg",
+      "notes": "This album was released at the peak of the Beatles psychedelic phase",
+      "userId": 16,
+      "id": 39
+    },
+    {
+      "title": "Let It Be",
+      "artist": "The Beatles",
+      "year": 1970,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/2/25/LetItBe.jpg",
+      "notes": "The Beatles' final studio album, released a month after their breakup",
+      "userId": 17,
+      "id": 40
+    },
+    {
+      "title": "The Wall",
+      "artist": "Pink Floyd",
+      "year": 1979,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/commons/b/b1/The_Wall_Cover.svg",
+      "notes": "How can you have any pudding if you don't eat your meat?",
+      "userId": 18,
+      "id": 41
+    },
+    {
+      "title": "A Collection of Great Dance Songs",
+      "artist": "Pink Floyd",
+      "year": 1981,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/8/86/Pink_Floyd_A_Collection_of_Great_Dance_Songs%21_1997_Remastered_CD-300.jpg",
+      "notes": "Compilation album featuring alternative mixes of \"Shine On You Crazy Diamond\", \"Money\", and \"Another Brick In The Wall (Pt. II)\"",
+      "userId": 19,
+      "id": 42
+    },
+    {
+      "title": "Animals",
+      "artist": "Pink Floyd",
+      "year": 1977,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/7/74/Pink_Floyd-Animals-Frontal.jpg",
+      "notes": "Self-recorded by Pink Floyd in their studio in London",
+      "userId": 20,
+      "id": 43
+    },
+    {
+      "title": "Wish You Were Here",
+      "artist": "Pink Floyd",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/a/a4/Pink_Floyd%2C_Wish_You_Were_Here_%281975%29.png",
+      "notes": "Received as a birthday present in 1976",
+      "userId": 11,
+      "id": 44
+    },
+    {
+      "title": "Obscured by Clouds",
+      "artist": "Pink Floyd",
+      "year": 1972,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/ef/Pink_Floyd_-_Obscured_by_Clouds.jpg",
+      "notes": "Acoustic-heavy Pink Floyd album. One of my favorites",
+      "userId": 2,
+      "id": 45
+    },
+    {
+      "title": "Meddle",
+      "artist": "Pink Floyd",
+      "year": 1971,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/d/d4/MeddleCover.jpeg",
+      "notes": "Great songs, but not a terribly popular Pink Floyd album",
+      "userId": 3,
+      "id": 46
+    },
+    {
+      "title": "Atom Heart Mother",
+      "artist": "Pink Floyd",
+      "year": 1970,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/2/2e/AtomHeartMotherCover.jpeg",
+      "notes": "My uncle gave this to me when I first starting playing guitar in 1988 and it's been influential to me as a musician",
+      "userId": 4,
+      "id": 47
+    },
+    {
+      "title": "Ummagumma",
+      "artist": "Pink Floyd",
+      "year": 1969,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/1/16/PinkFloyd-album-ummagummastudio-300.jpg",
+      "notes": "Double album! Found in a friend's basement and he let me keep it.",
+      "userId": 5,
+      "id": 48
+    },
+    {
+      "title": "More",
+      "artist": "Pink Floyd",
+      "year": 1969,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/4/40/MoreCover.jpg",
+      "notes": "Soundtrack album by Pink Floyd featured in movie of the same name",
+      "userId": 6,
+      "id": 49
+    },
+    {
+      "title": "A Saucerful of Secrets",
+      "artist": "Pink Floyd",
+      "year": 1968,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/5/54/Saucerful_of_secrets2.jpg",
+      "notes": "Last album for Syd Barrett, to be replaced during recording of this album by David Gilmour",
+      "userId": 7,
+      "id": 50
+    },
+    {
+      "title": "The Piper at the Gates of Dawn",
+      "artist": "Pink Floyd",
+      "year": 1967,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/3/3c/PinkFloyd-album-piperatthegatesofdawn_300.jpg",
+      "notes": "Debut album by this new band called \"Pink Floyd\". Stupid name, but I hope they go far...",
+      "userId": 8,
+      "id": 51
+    },
+    {
+      "title": "Yellow Submarine",
+      "artist": "The Beatles",
+      "year": 1969,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/a/ac/TheBeatles-YellowSubmarinealbumcover.jpg",
+      "notes": "B Side contains the orchestral score from the animated of the same name",
+      "userId": 9,
+      "id": 52
+    },
+    {
+      "title": "A Hard Day's Night",
+      "artist": "The Beatles",
+      "year": 1964,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/e6/HardDayUK.jpg",
+      "notes": "All 13 tracks written by Lennon-McCartney, solidifying them as one of the greatest songwriting duos of all time",
+      "userId": 10,
+      "id": 53
+    },
+    {
+      "title": "With The Beatles",
+      "artist": "The Beatles",
+      "year": 1963,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/0/0a/Withthebeatlescover.jpg",
+      "notes": "Very much still clean-cut boy band from Liverpool. \"It Won't Be Long\", \"All My Loving\"",
+      "userId": 11,
+      "id": 54
+    },
+    {
+      "title": "Legend",
+      "artist": "Bob Marley and The Wailers",
+      "year": 1984,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/c/c2/BobMarley-Legend.jpg",
+      "notes": "Best Selling reggae album of all time!",
+      "userId": 20,
+      "id": 55
+    },
+    {
+      "title": "Highway To Hell",
+      "artist": "AC/DC",
+      "year": 1979,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/a/ac/Acdc_Highway_to_Hell.JPG",
+      "notes": "Last album to feature singer Bon Scott before his death in early 1980",
+      "userId": 18,
+      "id": 56
+    },
+    {
+      "title": "Confrontation",
+      "artist": "Bob Marley and The Wailers",
+      "year": 1983,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/b/bb/BobMarley-Confrontation.jpg",
+      "notes": "Released in 1983, two years after Marley's death using unreleased materials and singles from previous studio sessions",
+      "userId": 17,
+      "id": 57
+    },
+    {
+      "title": "Uprising",
+      "artist": "Bob Marley and The Wailers",
+      "year": 1980,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/0/0a/BobMarley%26theWailersUprising.jpg",
+      "notes": "Last studio album to be released before Bob's death",
+      "userId": 18,
+      "id": 58
+    },
+    {
+      "title": "Past Masters",
+      "artist": "The Beatles",
+      "year": 1988,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Past_Maters.PNG",
+      "notes": "Double LP compilation album considered The Beatles' final \"major\" release",
+      "userId": 19,
+      "id": 59
+    },
+    {
+      "title": "One Dozen Roses",
+      "artist": "Smokey Robinson & The Miracles",
+      "year": 1971,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/9/95/Miracles-1970-onedozenroses.jpg",
+      "notes": "\"Tears of A Clown\" is my jam!",
+      "userId": 1,
+      "id": 60
+    },
+    {
+      "title": "Four in Blue",
+      "artist": "Smokey Robinson & The Miracles",
+      "year": 1969,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/5/5e/Four_in_Blue.jpeg",
+      "notes": "Covers of \"Hey Jude\" by The Beatles and \"You've Lost That Lovin' Feelin'\" by The Righteous Brothers",
+      "userId": 20,
+      "id": 61
+    },
+    {
+      "title": "Make It Happen",
+      "artist": "Smokey Robinson & The Miracles",
+      "year": 1967,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/b/b1/Miracles-make-it-happen.jpg",
+      "notes": "Released as \"Make It Happen\" in 1967, then re-released as \"Tears of a Clown\" in 1970 after the single was released",
+      "userId": 2,
+      "id": 62
+    },
+    {
+      "title": "Songs in The Key of Life",
+      "artist": "Stevie Wonder",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/e2/Songs_in_the_key_of_life.jpg",
+      "notes": "\"Sir Duke\", \"Isn't She Lovely\", \"I Wish\"",
+      "userId": 1,
+      "id": 63
+    },
+    {
+      "title": "Signed, Sealed, Delivered",
+      "artist": "Stevie Wonder",
+      "year": 1970,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/5/53/Signedsealeddelivered.JPG",
+      "notes": "\"Signed, Sealed Delivered, I'm Yours\", also a Beatles cover \"We Can Work It Out\"",
+      "userId": 3,
+      "id": 64
+    },
+    {
+      "title": "The Jazz Soul of Little Stevie",
+      "artist": "Stevie Wonder",
+      "year": 1962,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/a/ac/Jazzsoul.jpg",
+      "notes": "Debut Stevie Wonder album - recorded when he was twelve!",
+      "userId": 1,
+      "id": 65
+    },
+    {
+      "title": "If You Want Blood You've Got It",
+      "artist": "AC/DC",
+      "year": 1978,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/f/f6/Acdc_If_You_Want_Blood_You%27ve_Got_It.JPG",
+      "notes": "Only live album with Bon Scott before he died",
+      "userId": 4,
+      "id": 66
+    },
+    {
+      "title": "Powerage",
+      "artist": "AC/DC",
+      "year": 1978,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/d/de/Acdc_Powerage.JPG",
+      "notes": "Picked up at a yard sale in Bend, OR in 1994",
+      "userId": 5,
+      "id": 67
+    },
+    {
+      "title": "Let There Be Rock",
+      "artist": "AC/DC",
+      "year": 1977,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/d/d7/ACDC-LetThereBeRock.jpg",
+      "notes": "\"Whole Lotta Rosie\". Pure rock album!",
+      "userId": 6,
+      "id": 68
+    },
+    {
+      "title": "Dirty Deeds Done Dirt Cheap",
+      "artist": "AC/DC",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/5/51/Dirty_Deeds_Done_Dirt_Cheap_%28ACDC_album_-_cover_art0.jpg",
+      "notes": "Dirty Deeds! Done! Dirt! Cheap!",
+      "userId": 7,
+      "id": 69
+    },
+    {
+      "title": "High Voltage",
+      "artist": "AC/DC",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/f/fc/Acdc_high_voltage_international_album.jpg",
+      "notes": "\"It's A Long Way To The Top (If You Wanna Rock 'N' Roll)\"",
+      "userId": 8,
+      "id": 70
+    },
+    {
+      "title": "Led Zeppelin",
+      "artist": "Led Zeppelin",
+      "year": 1969,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/ef/Led_Zeppelin_-_Led_Zeppelin_%281969%29_front_cover.png",
+      "notes": "Debut album! Bought off Ebay in 2011. \"Communication Breakdown\", \"Dazed and Confused\", \"Babe, I'm Gonna Leave You\"",
+      "userId": 1,
+      "id": 71
+    },
+    {
+      "title": "Led Zeppelin II",
+      "artist": "Led Zeppelin",
+      "year": 1969,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/2/20/Led_Zeppelin_-_Led_Zeppelin_II.jpg",
+      "notes": "\"Whole Lotta Love\", \"Ramble On\"",
+      "userId": 9,
+      "id": 72
+    },
+    {
+      "title": "Led Zeppelin III",
+      "artist": "Led Zeppelin",
+      "year": 1970,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/5/5f/Led_Zeppelin_-_Led_Zeppelin_III.png",
+      "notes": "\"Immigrant Song\"",
+      "userId": 10,
+      "id": 73
+    },
+    {
+      "title": "Led Zeppelin IV (Untitled)",
+      "artist": "Led Zeppelin",
+      "year": 1971,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/2/26/Led_Zeppelin_-_Led_Zeppelin_IV.jpg",
+      "notes": "THE BEST ZEPPELIN ALBUM. \"Stairway To Heaven\", \"Rock and Roll\", \"Going To California\", \"Black Dog\"",
+      "userId": 11,
+      "id": 74
+    },
+    {
+      "title": "Houses of the Holy",
+      "artist": "Led Zeppelin",
+      "year": 1973,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/9/9f/Led_Zeppelin_-_Houses_of_the_Holy.jpg",
+      "notes": "\"D'yer Maker\", \"No Quarter\", \"Over The Hills and Far Away\"",
+      "userId": 12,
+      "id": 75
+    },
+    {
+      "title": "Physical Graffiti",
+      "artist": "Led Zeppelin",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/e3/Led_Zeppelin_-_Physical_Graffiti.jpg",
+      "notes": "\"Kashmir\", \"Trampled Under Foot\"",
+      "userId": 13,
+      "id": 76
+    },
+    {
+      "title": "Presence",
+      "artist": "Led Zeppelin",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/f/f3/Led_Zeppelin_-_Presence.jpg",
+      "notes": "Not my favorite, but Zeppelin is Zeppelin",
+      "userId": 14,
+      "id": 77
+    },
+    {
+      "title": "The Song Remains The Same",
+      "artist": "Led Zeppelin",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/b/b4/Led_Zeppelin_-_The_Song_Remains_the_Same.jpg",
+      "notes": "Live soundtrack album of the concert film of the same name",
+      "userId": 15,
+      "id": 78
+    },
+    {
+      "title": "In Through the Out Door",
+      "artist": "Led Zeppelin",
+      "year": 1979,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/b/ba/Led_Zeppelin_-_In_Through_the_Out_Door.jpg",
+      "notes": "Eighth and final studio album by Led Zeppelin. \"Fool in the Rain\", \"All My Love\"",
+      "userId": 16,
+      "id": 79
+    },
+    {
+      "title": "Coda",
+      "artist": "Led Zeppelin",
+      "year": 1982,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Led_Zeppelin_-_Coda.jpg",
+      "notes": "Compilation album featuring previously unused tracks",
+      "userId": 17,
+      "id": 80
+    },
+    {
+      "title": "Black Sabbath",
+      "artist": "Black Sabbath",
+      "year": 1970,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/d/da/Black_Sabbath_debut_album.jpg",
+      "notes": "First time I heard this album was the first time I heard metal music. Changed my life.",
+      "userId": 18,
+      "id": 81
+    },
+    {
+      "title": "Paranoid",
+      "artist": "Black Sabbath",
+      "year": 1970,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/6/64/Black_Sabbath_-_Paranoid.jpg",
+      "notes": "\"Paranoid\", \"Iron Man\", \"War Pigs\"",
+      "userId": 19,
+      "id": 82
+    },
+    {
+      "title": "Vol. 4",
+      "artist": "Black Sabbath",
+      "year": 1972,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/5/59/Black_Sabbath_Vol._4.png",
+      "notes": "First Sabbath album produced by guitarist Tony Iommi",
+      "userId": 20,
+      "id": 83
+    },
+    {
+      "title": "Master of Reality",
+      "artist": "Black Sabbath",
+      "year": 1971,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/4/40/Bsmor.jpg",
+      "notes": "One of the greatest heavy metal albums of all time. HEAVY",
+      "userId": 1,
+      "id": 84
+    },
+    {
+      "title": "Sabbath Bloody Sabbath",
+      "artist": "Black Sabbath",
+      "year": 1973,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/3/3b/Black_Sabbath_SbS.jpg",
+      "notes": "\"Killing Yourself To Live\"",
+      "userId": 2,
+      "id": 85
+    },
+    {
+      "title": "Babylon by Bus",
+      "artist": "Bob Marley and The Wailers",
+      "year": 1978,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/c/ca/BobMarley-BabylonByBus.jpg",
+      "notes": "\"Is This Love\", \"Jammin\", \"Stir It Up\"",
+      "userId": 1,
+      "id": 86
+    },
+    {
+      "title": "What's Going On",
+      "artist": "Marvin Gaye",
+      "year": 1971,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/8/84/MarvinGayeWhat%27sGoingOnalbumcover.jpg",
+      "notes": "\"What's Going On\", \"Inner City Blues\"",
+      "userId": 3,
+      "id": 87
+    },
+    {
+      "title": "Let's Get It On",
+      "artist": "Marvin Gaye",
+      "year": 1973,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/6/69/Let%27s_Get_It_On.jpg",
+      "notes": "\"Let's Get It On\", \"Just To Keep You Satisfied\"",
+      "userId": 4,
+      "id": 88
+    },
+    {
+      "title": "Trouble Man",
+      "artist": "Marvin Gaye",
+      "year": 1972,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/8/85/Marvintrouble.jpg",
+      "notes": "Soundtrack album to movie of same name",
+      "userId": 5,
+      "id": 89
+    },
+    {
+      "title": "Spinners",
+      "artist": "The Spinners",
+      "year": 1973,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/9/93/Spinners_cover.jpg",
+      "notes": "\"I'll Be Around\", \"Could It Be I'm Falling In Love\"",
+      "userId": 6,
+      "id": 90
+    },
+    {
+      "title": "The Original Spinners",
+      "artist": "The Spinners",
+      "year": 1967,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/ec/The_Original_spinners_album.jpg",
+      "notes": "Debut album. \"That's What Girls Are For\"",
+      "userId": 7,
+      "id": 91
+    },
+    {
+      "title": "Happiness is Being with the Spinners",
+      "artist": "The Spinners",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/9/92/Happinessisbeingwiththespinners.jpg",
+      "notes": "\"Rubberband Man\". Found at a yard sale in Cherry Hill NJ",
+      "userId": 8,
+      "id": 92
+    },
+    {
+      "title": "Chaka",
+      "artist": "Chaka Khan",
+      "year": 1978,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/1/1c/Chaka_Khan_-_Chaka_%281978_album%29.jpg",
+      "notes": "Debut album. \"I'm Every Woman\"",
+      "userId": 9,
+      "id": 93
+    },
+    {
+      "title": "Naughty",
+      "artist": "Chaka Khan",
+      "year": 1980,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/b/b3/ChakaKhanNaughty.jpg",
+      "notes": "Background vocals by a sixteen year old girl named \"Whitney Houston\"",
+      "userId": 10,
+      "id": 94
+    },
+    {
+      "title": "Rags to Rufus",
+      "artist": "Rufus, Chaka Khan",
+      "year": 1974,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/ec/Rags_to_Rufus.jpg",
+      "notes": "Featuring Chaka Khan and songwriting by Stevie Wonder",
+      "userId": 11,
+      "id": 95
+    },
+    {
+      "title": "Mothership Connection",
+      "artist": "Parliament",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/ef/ParliamentMothershipConnection.jpg",
+      "notes": "Quintessential funk album",
+      "userId": 12,
+      "id": 96
+    },
+    {
+      "title": "Chocolate City",
+      "artist": "Parliament",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/c/ca/ParliamentChocolateCityalbumcover.jpg",
+      "notes": "You cannot listen to this album and be in a bad mood. Gets you groovin!",
+      "userId": 13,
+      "id": 97
+    },
+    {
+      "title": "The Clones of Dr. Funkenstein",
+      "artist": "Parliament",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/a/a4/Parliament-The_Clones_of_Dr._Funkenstein_%28album_cover%29.jpg",
+      "notes": "\"Do That Stuff\", \"Dr. Funkenstein\"",
+      "userId": 14,
+      "id": 98
+    },
+    {
+      "title": "Computer Games",
+      "artist": "George Clinton",
+      "year": 1982,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/2/2a/George_Clinton-Computer_Games_%28album_cover%29.jpg",
+      "notes": "First George Clinton solo album, though most of the tracks were recorded by previous band members",
+      "userId": 15,
+      "id": 99
+    },
+    {
+      "title": "Sex Machine Today",
+      "artist": "James Brown",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/2/2e/James_Brown_Sex_Machine_Today.jpg",
+      "notes": "\"Sex Machine\" parts I and II, \"I Feel Good\"",
+      "userId": 16,
+      "id": 100
+    },
+    {
+      "title": "The Payback",
+      "artist": "James Brown",
+      "year": 1973,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/4/40/Jb-the-payback.jpg",
+      "notes": "\"The Payback\". Brown's only studio album to be certified gold",
+      "userId": 17,
+      "id": 101
+    },
+    {
+      "title": "Just As I Am",
+      "artist": "Bill Withers",
+      "year": 1971,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/2/2a/Withers-justasiamcoverart.JPG",
+      "notes": "Debut Bill Withers album. \"Ain't No Sunshine\", \"Grandma's Hands\"",
+      "userId": 18,
+      "id": 102
+    },
+    {
+      "title": "Still Bill",
+      "artist": "Bill Withers",
+      "year": 1972,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/1/19/Still_Bill.jpg",
+      "notes": "\"Use Me\", \"Lean On Me\", \"Kissing My Love\"",
+      "userId": 19,
+      "id": 103
+    },
+    {
+      "title": "Menagerie",
+      "artist": "Bill Withers",
+      "year": 1977,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/f/f8/Billwithersmenagerie.jpg",
+      "notes": "\"Lovely Day\". Found at Grimey's in Nashville TN",
+      "userId": 20,
+      "id": 104
+    },
+    {
+      "title": "Breezin'",
+      "artist": "George Benson",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/2/2e/Breezin_GB.jpg",
+      "notes": "Certified baby-making music",
+      "userId": 1,
+      "id": 105
+    },
+    {
+      "title": "Ramones",
+      "artist": "The Ramones",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/b/bb/Ramones_-_Ramones_cover.jpg",
+      "notes": "Intro into early punk rock. Featuring \"Blitzkrieg Bop\"",
+      "userId": 12,
+      "id": 106
+    },
+    {
+      "title": "Out of the Cellar",
+      "artist": "Ratt",
+      "year": 1984,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/d/da/RattOutoftheCellar.jpg",
+      "notes": "Bought at their show in San Diego 1985",
+      "userId": 12,
+      "id": 107
+    },
+    {
+      "title": "Dr. Feelgood",
+      "artist": "Motley Crue",
+      "year": 1989,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/3/38/Motley_Crue_-_Dr_Feelgood-front.jpg",
+      "notes": "Killer album! \"Dr. Feelgood\", \"Kickstart my Heart\", \"Same Old Situation\"",
+      "userId": 12,
+      "id": 108
+    },
+    {
+      "title": "Theatre of Pain",
+      "artist": "Motley Crue",
+      "year": 1985,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/f/f1/Theatre_of_Pain.jpg",
+      "notes": "\"Smokin' In The Boy's Room\", \"Home Sweet Home\"",
+      "userId": 12,
+      "id": 109
+    },
+    {
+      "title": "Winelight",
+      "artist": "Grover Washington, Jr.",
+      "year": 1980,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/e7/Winelight.jpg",
+      "notes": "Includes his biggest hit, \"Just The Two Of Us\" featuring Bill Withers",
+      "userId": 16,
+      "id": 110
+    },
+    {
+      "title": "Eric Clapton",
+      "artist": "Eric Clapton",
+      "year": 1970,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/4/48/Eric_Clapton_Album_Cover.jpg",
+      "notes": "First album as a solo artist, includes \"After Midnight\"",
+      "userId": 16,
+      "id": 111
+    },
+    {
+      "title": "Layla and Other Assorted Love Songs",
+      "artist": "Derek and the Dominos",
+      "year": 1970,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/a/a7/LaylaCover.jpg",
+      "notes": "\"Considered Eric Clapton's greatest musical achievement\". Includes \"Layla\", \"Bell Bottom Blues\", and the Hendrix cover \"Little Wing\"",
+      "userId": 16,
+      "id": 112
+    },
+    {
+      "title": "The Captain and Me",
+      "artist": "The Doobie Brothers",
+      "year": 1973,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/c/c9/The_Doobie_Brothers_-_The_Captain_and_Me.jpg",
+      "notes": "\"Long Train Runnin'\", \"China Grove\"",
+      "userId": 16,
+      "id": 113
+    },
+    {
+      "title": "Takin' It to the Streets",
+      "artist": "The Doobie Brothers",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/2/2a/The_Doobie_Brothers_-_Takin%27_It_to_the_Streets.jpg",
+      "notes": "First Doobie Brothers album to feature Michael McDonald on lead vocals. \"Takin' It to the Streets\", \"It Keeps You Runnin'\"",
+      "userId": 16,
+      "id": 114
+    },
+    {
+      "title": "Best of the Doobies",
+      "artist": "The Doobie Brothers",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/a/a9/Doobie_Brothers_-_Best_of_The_Doobies_%281976_album_cover%29.jpg",
+      "notes": "Greatest Hits 72-76. \"China Grove\", \"Long Train Runnin'\", \"Takin' It to the Streets\", \"Listen to the Music\", \"Black Water\"",
+      "userId": 16,
+      "id": 115
+    },
+    {
+      "title": "Minute By Minute",
+      "artist": "The Doobie Brothers",
+      "year": 1978,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/a/a4/The_Doobie_Brothers_-_Minute_by_Minute.jpg",
+      "notes": "Eighth studio album. \"Minute By Minute\", \"What A Fool Believes\"",
+      "userId": 16,
+      "id": 116
+    },
+    {
+      "title": "Breakfast in America",
+      "artist": "Supertramp",
+      "year": 1979,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/c/c4/Supertramp_-_Breakfast_in_America.jpg",
+      "notes": "Contains FOUR hit singles in the US: \"The Logical Song\", \"Breakfast in America\", \"Goodbye Stranger\", \"Take the Long Way Home\"",
+      "userId": 16,
+      "id": 117
+    },
+    {
+      "title": "The Second",
+      "artist": "Steppenwolf",
+      "year": 1968,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/1/10/SteppenwolfTheSecond.jpg",
+      "notes": "Biggest album for the Canadian-American rock band. Features \"Magic Carpet Ride\". Love this album",
+      "userId": 16,
+      "id": 118
+    },
+    {
+      "title": "Steppenwolf",
+      "artist": "Steppenwolf",
+      "year": 1968,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/6/65/SteppenwolfAlbum.jpg",
+      "notes": "Classic 60's psych rock. \"Born To Be Wild\"",
+      "userId": 16,
+      "id": 119
+    },
+    {
+      "title": "Iron Maiden",
+      "artist": "Iron Maiden",
+      "year": 1980,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/7/7c/Iron_Maiden_%28album%29_cover.jpg",
+      "notes": "My first dive into heavy metal. Purchased in 1995 at Sam Goody",
+      "userId": 16,
+      "id": 120
+    },
+    {
+      "title": "Fool for the City",
+      "artist": "Foghat",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/3/36/Fool_for_the_City.jpg",
+      "notes": "\"Fool for the City\", \"Slow Ride\"",
+      "userId": 16,
+      "id": 121
+    },
+    {
+      "title": "Night Shift",
+      "artist": "Foghat",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/1/1c/Foghatnightshiftalbum.jpg",
+      "notes": "\"Take Me To The River\" Al Green cover is fantastic. The whole album is hard 70s rock",
+      "userId": 16,
+      "id": 122
+    },
+    {
+      "title": "Number of the Beast",
+      "artist": "Iron Maiden",
+      "year": 1982,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/3/32/IronMaiden_NumberOfBeast.jpg",
+      "notes": "\"Number of the Beast\", \"Run to the Hills\"",
+      "userId": 16,
+      "id": 123
+    },
+    {
+      "title": "Killers",
+      "artist": "Iron Maiden",
+      "year": 1981,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/b/b4/Iron_Maiden_Killers.jpg",
+      "notes": "Found at Alice's Records in Austin TX",
+      "userId": 16,
+      "id": 124
+    },
+    {
+      "title": "Powerslave",
+      "artist": "Iron Maiden",
+      "year": 1984,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/1/1c/Iron_Maiden_-_Powerslave.jpg",
+      "notes": "Number 38 on Rolling Stone's list of Best Metal Albums of All Time",
+      "userId": 16,
+      "id": 125
+    },
+    {
+      "title": "Piece of Mind",
+      "artist": "Iron Maiden",
+      "year": 1983,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/8/85/Iron_Maiden_-_Piece_Of_Mind.jpg",
+      "notes": "\"The Trooper\" and other classics",
+      "userId": 16,
+      "id": 126
+    },
+    {
+      "title": "The Royal Scam",
+      "artist": "Steely Dan",
+      "year": 1976,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/ec/The_Royal_Scam_album_cover.jpg",
+      "notes": "Fifth studio album. \"Kid Charlemagne\", \"The Fez\"",
+      "userId": 16,
+      "id": 127
+    },
+    {
+      "title": "Katy Lied",
+      "artist": "Steely Dan",
+      "year": 1975,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/7/7e/Steely_Dan-Katy_Lied.jpg",
+      "notes": "Fourth studio album. \"Bad Sneakers\", \"Doctor Wu\"",
+      "userId": 16,
+      "id": 128
+    },
+    {
+      "title": "Gaucho",
+      "artist": "Steely Dan",
+      "year": 1980,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/8/8f/Steely_Dan_-_Gaucho.jpg",
+      "notes": "Seventh studio album by Donald Fagen and Walter Becker. \"Babylon Sisters\", \"Hey Nineteen\", \"Time Out of Mind\"",
+      "userId": 16,
+      "id": 129
+    },
+    {
+      "title": "Pretzel Logic",
+      "artist": "Steely Dan",
+      "year": 1974,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/c/cd/Pretzel_Logic_album.jpg",
+      "notes": "Third studio album. \"Rikki Don't Lose That Number\", Pretzel Logic\", \"Any Major Dude Will Tell You\"",
+      "userId": 16,
+      "id": 130
+    },
+    {
+      "title": "Can't Buy A Thrill",
+      "artist": "Steely Dan",
+      "year": 1972,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/b/b2/Cant_buy_a_tcant_buy_a_thrill.jpg",
+      "notes": "Debut album. \"Reelin' In The Years\", \"Do It Again\", \"Dirty Work\"",
+      "userId": 16,
+      "id": 131
+    },
+    {
+      "title": "Countdown to Ecstacy",
+      "artist": "Steely Dan",
+      "year": 1973,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/7/7f/Steely_Dan-Countdown_to_Ecstacy.jpg",
+      "notes": "Second studio album. \"Pearl of the Quarter\", \"My Old School\"",
+      "userId": 16,
+      "id": 132
+    },
+    {
+      "title": "Gold",
+      "artist": "Steely Dan",
+      "year": 1982,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/1/15/Gold_%28Steely_Dan_album%29.jpg",
+      "notes": "Phenomenal compilation album. \"FM (No Static At All)\", \"Black Cow\", \"Deacon Blues\", \"Hey Nineteen\", \"Babylon Sisters\"",
+      "userId": 16,
+      "id": 133
+    },
+    {
+      "title": "Disraeli Gears",
+      "artist": "Cream",
+      "year": 1967,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/c/cb/DisraeliGears.jpg",
+      "notes": "\"Strange Brew\", \"Sunshine of Your Love\"",
+      "userId": 16,
+      "id": 134
+    },
+    {
+      "title": "Wheels of Fire",
+      "artist": "Cream",
+      "year": 1968,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/a/a8/Creamwheelsoffire.jpeg",
+      "notes": "\"White Room\", \"Born Under A Bad Sign\"",
+      "userId": 16,
+      "id": 135
+    },
+    {
+      "title": "I Walk The Line",
+      "artist": "Johnny Cash",
+      "year": 1964,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/ec/JohnnyCashIWalkTheLine.jpg",
+      "notes": "My poppop used to play this when I came over as a kid. So many memories while listening to this album!",
+      "userId": 5,
+      "id": 136
+    },
+    {
+      "title": "Hello, I'm Johnny Cash",
+      "artist": "Johnny Cash",
+      "year": 1970,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/6/69/JohnnyCashHelloImJC.jpg",
+      "notes": "Number one country album 1970",
+      "userId": 9,
+      "id": 137
+    },
+    {
+      "title": "Man in Black",
+      "artist": "Johnny Cash",
+      "year": 1971,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/0/08/JohnnyCashManInBlack.jpg",
+      "notes": "Number one country album 1971",
+      "userId": 9,
+      "id": 138
+    },
+    {
+      "title": "Greatest Hits Vol. 2",
+      "artist": "Johnny Cash",
+      "year": 1971,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/e/e5/JohnnyCashGreatestHitsVol2.jpg",
+      "notes": "\"A Boy Named Sue\", \"Big River\", \"Folsom Prison Blues\", \"Daddy Sang Bass\", \"Sunday Morning Comin' Down\"",
+      "userId": 5,
+      "id": 139
+    },
+    {
+      "title": "Gentle on My Mind",
+      "artist": "Glen Campbell",
+      "year": 1967,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/6/6e/Glen_Campbell_Gentle_on_My_Mind_album_cover.jpg",
+      "notes": "Grandma's favorite album <3",
+      "userId": 9,
+      "id": 140
+    },
+    {
+      "title": "By the Time I Get to Phoenix",
+      "artist": "Glen Campbell",
+      "year": 1967,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/4/4c/Glen_Campbell_By_the_Time_I_Get_to_Phoenix_album_cover.jpg",
+      "notes": "Grammy for Album of the Year 1968, Grammy for title track. Grammies everywhere",
+      "userId": 5,
+      "id": 141
+    },
+    {
+      "title": "Wichita Lineman",
+      "artist": "Glen Campbell",
+      "year": 1968,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/1/1a/Glen_Campbell_Wichita_Lineman_album_cover.jpg",
+      "notes": "Another number one album for Glen, featuring title track \"Wichita Lineman\"",
+      "userId": 5,
+      "id": 142
+    },
+    {
+      "title": "Crosby, Stills & Nash",
+      "artist": "Crosby, Stills & Nash",
+      "year": 1969,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/3/39/Crosbystillsandnash.jpg",
+      "notes": "Debut album! \"Marrakesh Express\", \"Suite: Judy Blue Eyes\", \"Helplessly Hoping\"",
+      "userId": 1,
+      "id": 143
+    },
+    {
+      "title": "Underdog",
+      "artist": "Atlanta Rhythm Section",
+      "year": 1979,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/f/fd/Atlanta_Rhythm_Section_-_Underdog.jpg",
+      "notes": "\"Spooky\", \"Do It or Die\". Groovy rock!",
+      "userId": 1,
+      "id": 144
+    },
+    {
+      "title": "Honky Tonk Heroes",
+      "artist": "Waylon Jennings",
+      "year": 1973,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/9/98/WaylonJenningsHonkyTonkHeroes.jpg",
+      "notes": "Big album for Waylon!",
+      "userId": 10,
+      "id": 146
+    },
+    {
+      "title": "Street Survivors",
+      "artist": "Lynyrd Skynyrd",
+      "year": 1977,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/b/bf/StreetSurvivorsFlames.jpg",
+      "notes": "Released three days before the plane crash that killed most of the band members",
+      "userId": 10,
+      "id": 147
+    },
+    {
+      "title": "Changes in Latitudes, Changes in Attitudes",
+      "artist": "Jimmy Buffett",
+      "year": 1977,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/9/97/Buffettchanges.jpg",
+      "notes": "\"Margaritaville\"",
+      "userId": 10,
+      "id": 148
+    },
+    {
+      "title": "Second Helping",
+      "artist": "Lynyrd Skynyrd",
+      "year": 1974,
+      "coverArt": "https://upload.wikimedia.org/wikipedia/en/c/c5/SecondHelpingLynyrdSkynyrd.jpg",
+      "notes": "\"Sweet Home Alabama\", \"Ballad of Curtis Loew\", \"Call Me The Breeze\"",
+      "userId": 5,
+      "id": 149
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "Rock"
+    },
+    {
+      "id": 2,
+      "name": "Blues"
+    },
+    {
+      "id": 3,
+      "name": "Jazz"
+    },
+    {
+      "id": 4,
+      "name": "Country"
+    },
+    {
+      "id": 5,
+      "name": "Soul"
+    },
+    {
+      "id": 6,
+      "name": "Funk"
+    },
+    {
+      "id": 7,
+      "name": "Classical/Soundtrack"
+    },
+    {
+      "id": 8,
+      "name": "Reggae"
+    },
+    {
+      "id": 9,
+      "name": "Metal"
+    }
+  ],
+  "albumGenres": [
+    {
+      "id": 1,
+      "albumId": 1,
+      "genreId": 1
+    },
+    {
+      "id": 2,
+      "albumId": 2,
+      "genreId": 1
+    },
+    {
+      "id": 3,
+      "albumId": 3,
+      "genreId": 1
+    },
+    {
+      "id": 4,
+      "albumId": 3,
+      "genreId": 3
+    },
+    {
+      "id": 5,
+      "albumId": 4,
+      "genreId": 1
+    },
+    {
+      "id": 6,
+      "albumId": 5,
+      "genreId": 2
+    },
+    {
+      "id": 7,
+      "albumId": 5,
+      "genreId": 3
+    },
+    {
+      "id": 8,
+      "albumId": 6,
+      "genreId": 1
+    },
+    {
+      "id": 9,
+      "albumId": 7,
+      "genreId": 1
+    },
+    {
+      "id": 10,
+      "albumId": 8,
+      "genreId": 1
+    },
+    {
+      "id": 11,
+      "albumId": 8,
+      "genreId": 4
+    },
+    {
+      "id": 12,
+      "albumId": 9,
+      "genreId": 1
+    },
+    {
+      "id": 13,
+      "albumId": 9,
+      "genreId": 5
+    },
+    {
+      "id": 14,
+      "albumId": 10,
+      "genreId": 1
+    },
+    {
+      "id": 15,
+      "albumId": 11,
+      "genreId": 1
+    },
+    {
+      "id": 16,
+      "albumId": 12,
+      "genreId": 1
+    },
+    {
+      "id": 17,
+      "albumId": 13,
+      "genreId": 1
+    },
+    {
+      "id": 18,
+      "albumId": 14,
+      "genreId": 1
+    },
+    {
+      "id": 19,
+      "albumId": 14,
+      "genreId": 4
+    },
+    {
+      "id": 20,
+      "albumId": 15,
+      "genreId": 5
+    },
+    {
+      "id": 21,
+      "albumId": 15,
+      "genreId": 6
+    },
+    {
+      "id": 22,
+      "albumId": 16,
+      "genreId": 4
+    },
+    {
+      "id": 23,
+      "albumId": 17,
+      "genreId": 5
+    },
+    {
+      "id": 24,
+      "albumId": 17,
+      "genreId": 7
+    },
+    {
+      "id": 25,
+      "albumId": 18,
+      "genreId": 3
+    },
+    {
+      "id": 26,
+      "albumId": 19,
+      "genreId": 5
+    },
+    {
+      "id": 27,
+      "albumId": 20,
+      "genreId": 5
+    },
+    {
+      "id": 28,
+      "albumId": 21,
+      "genreId": 1
+    },
+    {
+      "id": 29,
+      "albumId": 22,
+      "genreId": 1
+    },
+    {
+      "id": 30,
+      "albumId": 23,
+      "genreId": 1
+    },
+    {
+      "id": 31,
+      "albumId": 24,
+      "genreId": 1
+    },
+    {
+      "id": 32,
+      "albumId": 25,
+      "genreId": 1
+    },
+    {
+      "id": 33,
+      "albumId": 26,
+      "genreId": 7
+    },
+    {
+      "id": 34,
+      "albumId": 27,
+      "genreId": 5
+    },
+    {
+      "id": 35,
+      "albumId": 28,
+      "genreId": 1
+    },
+    {
+      "id": 36,
+      "albumId": 29,
+      "genreId": 1
+    },
+    {
+      "id": 37,
+      "albumId": 30,
+      "genreId": 1
+    },
+    {
+      "id": 38,
+      "albumId": 31,
+      "genreId": 1
+    },
+    {
+      "id": 39,
+      "albumId": 32,
+      "genreId": 1
+    },
+    {
+      "id": 40,
+      "albumId": 33,
+      "genreId": 1
+    },
+    {
+      "id": 41,
+      "albumId": 34,
+      "genreId": 1
+    },
+    {
+      "id": 42,
+      "albumId": 35,
+      "genreId": 1
+    },
+    {
+      "id": 43,
+      "albumId": 36,
+      "genreId": 1
+    },
+    {
+      "id": 44,
+      "albumId": 37,
+      "genreId": 1
+    },
+    {
+      "id": 45,
+      "albumId": 38,
+      "genreId": 1
+    },
+    {
+      "id": 46,
+      "albumId": 39,
+      "genreId": 1
+    },
+    {
+      "id": 47,
+      "albumId": 40,
+      "genreId": 1
+    },
+    {
+      "id": 48,
+      "albumId": 41,
+      "genreId": 1
+    },
+    {
+      "id": 49,
+      "albumId": 42,
+      "genreId": 1
+    },
+    {
+      "id": 50,
+      "albumId": 43,
+      "genreId": 1
+    },
+    {
+      "id": 51,
+      "albumId": 44,
+      "genreId": 1
+    },
+    {
+      "id": 52,
+      "albumId": 45,
+      "genreId": 1
+    },
+    {
+      "id": 53,
+      "albumId": 46,
+      "genreId": 1
+    },
+    {
+      "id": 54,
+      "albumId": 47,
+      "genreId": 1
+    },
+    {
+      "id": 55,
+      "albumId": 48,
+      "genreId": 1
+    },
+    {
+      "id": 56,
+      "albumId": 49,
+      "genreId": 1
+    },
+    {
+      "id": 57,
+      "albumId": 50,
+      "genreId": 1
+    },
+    {
+      "id": 58,
+      "albumId": 51,
+      "genreId": 1
+    },
+    {
+      "id": 59,
+      "albumId": 52,
+      "genreId": 1
+    },
+    {
+      "id": 60,
+      "albumId": 53,
+      "genreId": 1
+    },
+    {
+      "id": 61,
+      "albumId": 54,
+      "genreId": 1
+    },
+    {
+      "id": 62,
+      "albumId": 55,
+      "genreId": 8
+    },
+    {
+      "id": 63,
+      "albumId": 56,
+      "genreId": 1
+    },
+    {
+      "id": 64,
+      "albumId": 57,
+      "genreId": 8
+    },
+    {
+      "id": 65,
+      "albumId": 58,
+      "genreId": 8
+    },
+    {
+      "id": 66,
+      "albumId": 59,
+      "genreId": 1
+    },
+    {
+      "id": 67,
+      "albumId": 60,
+      "genreId": 5
+    },
+    {
+      "id": 68,
+      "albumId": 61,
+      "genreId": 5
+    },
+    {
+      "id": 69,
+      "albumId": 62,
+      "genreId": 5
+    },
+    {
+      "id": 70,
+      "albumId": 63,
+      "genreId": 5
+    },
+    {
+      "id": 71,
+      "albumId": 63,
+      "genreId": 6
+    },
+    {
+      "id": 72,
+      "albumId": 63,
+      "genreId": 2
+    },
+    {
+      "id": 73,
+      "albumId": 64,
+      "genreId": 5
+    },
+    {
+      "id": 74,
+      "albumId": 64,
+      "genreId": 6
+    },
+    {
+      "id": 75,
+      "albumId": 64,
+      "genreId": 2
+    },
+    {
+      "id": 76,
+      "albumId": 65,
+      "genreId": 5
+    },
+    {
+      "id": 77,
+      "albumId": 65,
+      "genreId": 6
+    },
+    {
+      "id": 78,
+      "albumId": 65,
+      "genreId": 2
+    },
+    {
+      "id": 79,
+      "albumId": 66,
+      "genreId": 1
+    },
+    {
+      "id": 80,
+      "albumId": 67,
+      "genreId": 1
+    },
+    {
+      "id": 81,
+      "albumId": 68,
+      "genreId": 1
+    },
+    {
+      "id": 82,
+      "albumId": 69,
+      "genreId": 1
+    },
+    {
+      "id": 83,
+      "albumId": 70,
+      "genreId": 1
+    },
+    {
+      "id": 84,
+      "albumId": 71,
+      "genreId": 1
+    },
+    {
+      "id": 85,
+      "albumId": 72,
+      "genreId": 1
+    },
+    {
+      "id": 86,
+      "albumId": 73,
+      "genreId": 1
+    },
+    {
+      "id": 87,
+      "albumId": 74,
+      "genreId": 1
+    },
+    {
+      "id": 88,
+      "albumId": 75,
+      "genreId": 1
+    },
+    {
+      "id": 89,
+      "albumId": 76,
+      "genreId": 1
+    },
+    {
+      "id": 90,
+      "albumId": 77,
+      "genreId": 1
+    },
+    {
+      "id": 91,
+      "albumId": 78,
+      "genreId": 1
+    },
+    {
+      "id": 92,
+      "albumId": 79,
+      "genreId": 1
+    },
+    {
+      "id": 93,
+      "albumId": 80,
+      "genreId": 1
+    },
+    {
+      "id": 94,
+      "albumId": 81,
+      "genreId": 9
+    },
+    {
+      "id": 95,
+      "albumId": 82,
+      "genreId": 9
+    },
+    {
+      "id": 96,
+      "albumId": 83,
+      "genreId": 9
+    },
+    {
+      "id": 97,
+      "albumId": 84,
+      "genreId": 9
+    },
+    {
+      "id": 98,
+      "albumId": 85,
+      "genreId": 9
+    },
+    {
+      "id": 99,
+      "albumId": 86,
+      "genreId": 8
+    },
+    {
+      "id": 100,
+      "albumId": 87,
+      "genreId": 5
+    },
+    {
+      "id": 101,
+      "albumId": 88,
+      "genreId": 5
+    },
+    {
+      "id": 102,
+      "albumId": 89,
+      "genreId": 5
+    },
+    {
+      "id": 103,
+      "albumId": 90,
+      "genreId": 5
+    },
+    {
+      "id": 104,
+      "albumId": 91,
+      "genreId": 5
+    },
+    {
+      "id": 105,
+      "albumId": 92,
+      "genreId": 5
+    },
+    {
+      "id": 106,
+      "albumId": 93,
+      "genreId": 5
+    },
+    {
+      "id": 107,
+      "albumId": 93,
+      "genreId": 6
+    },
+    {
+      "id": 108,
+      "albumId": 94,
+      "genreId": 5
+    },
+    {
+      "id": 109,
+      "albumId": 94,
+      "genreId": 6
+    },
+    {
+      "id": 110,
+      "albumId": 95,
+      "genreId": 5
+    },
+    {
+      "id": 111,
+      "albumId": 95,
+      "genreId": 6
+    },
+    {
+      "id": 112,
+      "albumId": 96,
+      "genreId": 6
+    },
+    {
+      "id": 113,
+      "albumId": 97,
+      "genreId": 6
+    },
+    {
+      "id": 114,
+      "albumId": 98,
+      "genreId": 6
+    },
+    {
+      "id": 115,
+      "albumId": 99,
+      "genreId": 6
+    },
+    {
+      "id": 116,
+      "albumId": 100,
+      "genreId": 5
+    },
+    {
+      "id": 117,
+      "albumId": 100,
+      "genreId": 6
+    },
+    {
+      "id": 118,
+      "albumId": 101,
+      "genreId": 5
+    },
+    {
+      "id": 119,
+      "albumId": 101,
+      "genreId": 6
+    },
+    {
+      "id": 120,
+      "albumId": 102,
+      "genreId": 5
+    },
+    {
+      "id": 121,
+      "albumId": 102,
+      "genreId": 2
+    },
+    {
+      "id": 122,
+      "albumId": 103,
+      "genreId": 2
+    },
+    {
+      "id": 123,
+      "albumId": 103,
+      "genreId": 5
+    },
+    {
+      "id": 124,
+      "albumId": 104,
+      "genreId": 5
+    },
+    {
+      "id": 125,
+      "albumId": 104,
+      "genreId": 2
+    },
+    {
+      "id": 126,
+      "albumId": 105,
+      "genreId": 3
+    },
+    {
+      "id": 127,
+      "albumId": 106,
+      "genreId": 1
+    },
+    {
+      "id": 128,
+      "albumId": 107,
+      "genreId": 1
+    },
+    {
+      "id": 129,
+      "albumId": 107,
+      "genreId": 9
+    },
+    {
+      "id": 130,
+      "albumId": 108,
+      "genreId": 1
+    },
+    {
+      "id": 131,
+      "albumId": 108,
+      "genreId": 9
+    },
+    {
+      "id": 132,
+      "albumId": 109,
+      "genreId": 1
+    },
+    {
+      "id": 133,
+      "albumId": 109,
+      "genreId": 9
+    },
+    {
+      "id": 134,
+      "albumId": 110,
+      "genreId": 3
+    },
+    {
+      "id": 135,
+      "albumId": 111,
+      "genreId": 1
+    },
+    {
+      "id": 136,
+      "albumId": 112,
+      "genreId": 1
+    },
+    {
+      "id": 137,
+      "albumId": 113,
+      "genreId": 1
+    },
+    {
+      "id": 138,
+      "albumId": 114,
+      "genreId": 1
+    },
+    {
+      "id": 139,
+      "albumId": 115,
+      "genreId": 1
+    },
+    {
+      "id": 140,
+      "albumId": 116,
+      "genreId": 1
+    },
+    {
+      "id": 141,
+      "albumId": 117,
+      "genreId": 1
+    },
+    {
+      "id": 142,
+      "albumId": 118,
+      "genreId": 1
+    },
+    {
+      "id": 143,
+      "albumId": 119,
+      "genreId": 1
+    },
+    {
+      "id": 144,
+      "albumId": 120,
+      "genreId": 9
+    },
+    {
+      "id": 145,
+      "albumId": 121,
+      "genreId": 1
+    },
+    {
+      "id": 146,
+      "albumId": 122,
+      "genreId": 1
+    },
+    {
+      "id": 147,
+      "albumId": 123,
+      "genreId": 9
+    },
+    {
+      "id": 148,
+      "albumId": 124,
+      "genreId": 9
+    },
+    {
+      "id": 149,
+      "albumId": 125,
+      "genreId": 9
+    },
+    {
+      "id": 150,
+      "albumId": 126,
+      "genreId": 9
+    },
+    {
+      "id": 151,
+      "albumId": 127,
+      "genreId": 1
+    },
+    {
+      "id": 152,
+      "albumId": 127,
+      "genreId": 3
+    },
+    {
+      "id": 153,
+      "albumId": 128,
+      "genreId": 1
+    },
+    {
+      "id": 154,
+      "albumId": 128,
+      "genreId": 3
+    },
+    {
+      "id": 155,
+      "albumId": 129,
+      "genreId": 1
+    },
+    {
+      "id": 156,
+      "albumId": 129,
+      "genreId": 3
+    },
+    {
+      "id": 157,
+      "albumId": 130,
+      "genreId": 1
+    },
+    {
+      "id": 158,
+      "albumId": 130,
+      "genreId": 3
+    },
+    {
+      "id": 159,
+      "albumId": 131,
+      "genreId": 1
+    },
+    {
+      "id": 160,
+      "albumId": 131,
+      "genreId": 3
+    },
+    {
+      "id": 161,
+      "albumId": 132,
+      "genreId": 1
+    },
+    {
+      "id": 162,
+      "albumId": 132,
+      "genreId": 3
+    },
+    {
+      "id": 163,
+      "albumId": 133,
+      "genreId": 1
+    },
+    {
+      "id": 164,
+      "albumId": 133,
+      "genreId": 3
+    },
+    {
+      "id": 165,
+      "albumId": 134,
+      "genreId": 1
+    },
+    {
+      "id": 166,
+      "albumId": 134,
+      "genreId": 2
+    },
+    {
+      "id": 167,
+      "albumId": 135,
+      "genreId": 1
+    },
+    {
+      "id": 168,
+      "albumId": 135,
+      "genreId": 2
+    },
+    {
+      "id": 169,
+      "albumId": 136,
+      "genreId": 4
+    },
+    {
+      "id": 170,
+      "albumId": 137,
+      "genreId": 4
+    },
+    {
+      "id": 171,
+      "albumId": 138,
+      "genreId": 4
+    },
+    {
+      "id": 172,
+      "albumId": 139,
+      "genreId": 4
+    },
+    {
+      "id": 173,
+      "albumId": 140,
+      "genreId": 4
+    },
+    {
+      "id": 174,
+      "albumId": 141,
+      "genreId": 4
+    },
+    {
+      "id": 175,
+      "albumId": 142,
+      "genreId": 4
+    },
+    {
+      "id": 176,
+      "albumId": 143,
+      "genreId": 1
+    },
+    {
+      "id": 178,
+      "albumId": 144,
+      "genreId": 6
+    },
+    {
+      "id": 179,
+      "albumId": 144,
+      "genreId": 2
+    },
+    {
+      "id": 180,
+      "albumId": 144,
+      "genreId": 1
+    },
+    {
+      "albumId": 146,
+      "genreId": 4,
+      "id": 183
+    },
+    {
+      "albumId": 147,
+      "genreId": 1,
+      "id": 184
+    },
+    {
+      "albumId": 147,
+      "genreId": 4,
+      "id": 185
+    },
+    {
+      "albumId": 148,
+      "genreId": 4,
+      "id": 186
+    },
+    {
+      "albumId": 148,
+      "genreId": 1,
+      "id": 187
+    },
+    {
+      "albumId": 143,
+      "genreId": 4,
+      "id": 191
+    },
+    {
+      "albumId": 149,
+      "genreId": 4,
+      "id": 192
+    },
+    {
+      "albumId": 149,
+      "genreId": 1,
+      "id": 193
+    }
+  ]
+}
