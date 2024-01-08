@@ -3,7 +3,7 @@ services:
   react-app:
     container_name: groove-grove-react
     build:
-      context: ./react-app
+      context: ./app
       dockerfile: Dockerfile.react
     ports:
       - "3000:3000"
