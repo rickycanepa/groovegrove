@@ -21,6 +21,8 @@ services:
       - mongodb
     networks:
       - groove-grove
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=groove-grove-mongodb
 
   mongodb:
     container_name: groove-grove-mongodb
