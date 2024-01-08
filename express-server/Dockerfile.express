@@ -1,0 +1,2 @@
+# Use an official Node runtime as a base image
+FROM mongo-express:latest

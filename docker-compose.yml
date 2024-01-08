@@ -1,0 +1,39 @@
+version: '3'
+services:
+  react-app:
+    container_name: groove-grove-react
+    build:
+      context: ./react-app
+      dockerfile: Dockerfile.react
+    ports:
+      - "3000:3000"
+    depends_on:
+      - express-server
+    networks:
+      - groove-grove
+
+  express-server:
+    container_name: groove-grove-express
+    image: mongo-express:latest
+    ports:
+      - "5000:8081"
+    depends_on:
+      - mongodb
+    networks:
+      - groove-grove
+
+  mongodb:
+    container_name: groove-grove-mongodb
+    image: mongo:latest
+    networks:
+      - groove-grove
+    volumes:
+      - mongodb-data:/data/db
+
+networks:
+  groove-grove:
+    external: true
+
+volumes:
+  mongodb-data:
+    external: false
