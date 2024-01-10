@@ -1,21 +1,12 @@
-import { useState } from 'react'
-import './App.css'
+import './App.css';
+import Navbar from './components/navbar';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
 
   return (
     <>
-      <div className="text-3xl font-lemon">
-        Groove Grove
-      </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <Navbar />
+      <header className="text-3xl">Groove Grove</header>
     </>
   )
 }
-
-export default App
