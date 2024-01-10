@@ -1,6 +1,6 @@
-import ReactFirebaseUI from "firebaseui-react";
+// import { ReactFirebaseUI } from "firebaseui-react";
 
-const auth = getAuth();
+// const auth = getAuth();
 
 const firebaseConfig = {
     apiKey: "AIzaSyAsjh6LzpVsQI-7UyaaQW6mvyl2HaJSPck",
