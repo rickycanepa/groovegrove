@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-    background-image: url('./assets/slider-bg.jpg');
+    /* background-image: url('./assets/slider-bg.jpg');
+    background-color: var();
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     font-family: 'Lemon', serif;
 }
