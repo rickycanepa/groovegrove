@@ -6,6 +6,7 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <
       <div>
         <header className="text-3xl">Groove Grove</header>
       </div>
