@@ -1,12 +1,13 @@
 import './App.css';
 import Navbar from './components/navbar';
+import { Auth } from './components/auth';
 
 export default function App() {
 
   return (
     <>
       <Navbar />
-      <
+      <Auth />
       <div>
         <header className="text-3xl">Groove Grove</header>
       </div>
