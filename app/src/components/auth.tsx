@@ -7,7 +7,7 @@ export const Auth = () => {
     const [password, setPassword] = useState("")
 
     const signIn = async () => {
-        await createUserWithEmailAndPassword()
+        await createUserWithEmailAndPassword(auth, email, password)
     };
     
     return (
