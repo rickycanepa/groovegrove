@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App.tsx'
-import { Auth } from './components/auth.tsx';
+import Login from './components/login.tsx';
+import Register from './components/register.tsx';
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -15,9 +16,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             index
             element={ <App /> }
           />
-          {/* <Route path="profile" element={ isLoggedIn ? <Profile userProfile={userProfile}/> : <Navigate to="/login" /> }/> */}
-          <Route path="login" element={<Auth />} />
-          {/* <Route path="register" element={<Register />} /> */}
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
           <Route path="*" element={<p>Whoops, nothing here...</p>} />
         </Route>
       </Routes>
