@@ -11,13 +11,17 @@ export const Auth = () => {
     };
     
     return (
-        <div>
-            <input placeholder="Email..." 
-            onChange={(e) => setEmail(e.target.value)} 
-            />
+        <div className="text-center">
+            <div className="m-6">
+                <input placeholder="Email..." 
+                onChange={(e) => setEmail(e.target.value)} 
+                />
+            </div>
+            <div>
             <input placeholder="Password..."
             onChange={(e) => setPassword(e.target.value)}
             />
+            </div>
             <button onClick={signIn}>Sign In</button>
         </div>
     )

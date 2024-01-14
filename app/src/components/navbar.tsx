@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import logo from '../assets/vinyl-logo.svg';
 
 export default function Navbar() {
@@ -14,21 +16,21 @@ export default function Navbar() {
             </div>
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div className="text-sm lg:flex-grow">
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-whitesmoke-500 hover:text-gunmetal-900 mr-4">
+                    <Link to="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-whitesmoke-500 hover:text-gunmetal-900 mr-4">
                         Trending
-                    </a>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-whitesmoke-500 hover:text-gunmetal-900 mr-4">
+                    </Link>
+                    <Link to="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-whitesmoke-500 hover:text-gunmetal-900 mr-4">
                         Genres
-                    </a>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-whitesmoke-500 hover:text-gunmetal-900 mr-4">
+                    </Link>
+                    <Link to="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-whitesmoke-500 hover:text-gunmetal-900 mr-4">
                         Lists
-                    </a>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-whitesmoke-500 hover:text-gunmetal-900">
+                    </Link>
+                    <Link to="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-whitesmoke-500 hover:text-gunmetal-900">
                         Profile
-                    </a>
+                    </Link>
                 </div>
                 <div>
-                    <a href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-whitesmoke-500 border-whitesmoke-500 hover:border-transparent hover:text-gunmetal-900 hover:bg-whitesmoke-500 mt-4 lg:mt-0">Logout</a>
+                    <Link to={"/login"} className="inline-block text-sm px-4 py-2 leading-none border rounded text-whitesmoke-500 border-whitesmoke-500 hover:border-transparent hover:text-gunmetal-900 hover:bg-whitesmoke-500 mt-4 lg:mt-0">Login</Link>
                 </div>
             </div>
         </nav>
