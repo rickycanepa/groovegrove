@@ -44,12 +44,12 @@ const AuthProvider = ({ children }: {children: React.ReactNode}) => {
         });
     }
 
-    const SignIn = async (creds:  LoginFormValues,  onSuccess: () =>  void) => {
+    const SignIn = async (creds: LoginFormValues, onSuccess: () =>  void) => {
         setIsLoading(true);
         TAuth.SignIn(creds)
-        .then(userCredential  => {
+        .then(userCredential => {
             const { user } =  userCredential;
-            if  (user) {
+            if (user) {
             setCurrentUser(user);
             //redirect user to targeted route
             navigate('/dashboard', { replace:  true });
