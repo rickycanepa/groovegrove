@@ -1,7 +1,7 @@
-import { Auth } from "./auth";
+// import { Auth } from "./auth"
 
-export default function Register() {
-    return (
-        <Auth/>
-    )
-}
+// export default function Register() {
+//     return (
+//         <Auth/>
+//     )
+// }
