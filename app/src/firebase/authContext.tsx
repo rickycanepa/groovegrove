@@ -25,7 +25,7 @@ const AuthProvider = ({ children }: {children: React.ReactNode}) => {
             const userCredential = await authService.SignUp(creds) as { user: User };
             const { user } = userCredential;
             if (user) {
-                setCurrentUser(user);
+                setCurrentUser(user)
                 navigate('/', { replace: true });
             } else {
                 navigate('/');

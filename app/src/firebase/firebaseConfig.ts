@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseApp = initializeApp({
-  apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGE_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+  apiKey:" AIzaSyCuS0hlDdXNoJnTcrumwkVcoZC6CNpczJc",
+  authDomain: "groove-grove-3d74c.firebaseapp.com",
+  projectId: "groove-grove-3d74c",
+  storageBucket: "groove-grove-3d74c.appspot.com",
+  messagingSenderId: "478223878731",
+  appId: "1:478223878731:web:35de13c763686fafe51bce",
+  measurementId: "G-MLY84MMRYT"
 });
 
 export const firebaseAuth = getAuth(firebaseApp);

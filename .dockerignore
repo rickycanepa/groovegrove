@@ -9,4 +9,3 @@ docs/
 tsconfig.json
 tsconfig.*.json
 package-lock.json
-.env*
