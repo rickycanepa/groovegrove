@@ -3,6 +3,11 @@
     "firebase": "^10.7.1"
   },
   "devDependencies": {
-    "dotenv": "^16.4.1"
+    "dotenv": "^16.4.1",
+    "rollup": "^4.9.6"
+  },
+  "scripts": {
+    "build": "npm run build --prefix app",
+    "dev": "npm run dev --prefix app"
   }
 }
